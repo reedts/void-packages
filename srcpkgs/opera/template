@@ -1,6 +1,6 @@
 # Template file for 'opera'
 pkgname=opera
-version=67.0.3575.53
+version=67.0.3575.137
 revision=1
 archs="x86_64"
 depends="ffmpeg desktop-file-utils hicolor-icon-theme"
@@ -9,7 +9,7 @@ maintainer="Diogo Leal <diogo@diogoleal.com>"
 license="custom:Proprietary"
 homepage="https://www.opera.com/computer"
 distfiles="http://get.geo.opera.com/pub/opera/desktop/${version}/linux/${pkgname}-stable_${version}_amd64.deb"
-checksum=e898ae6b0c70b95bbeb6a08dd42f649ca0a2dfa92abc7a87d68f7538116ed3ed
+checksum=b4ec384b6a2315c5caff83d5473e8f3ce9228ea4ea5a0378a99327d6a4a7408f
 repository="nonfree"
 nostrip=yes
 

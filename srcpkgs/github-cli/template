@@ -1,7 +1,7 @@
 # Template file for 'github-cli'
 pkgname=github-cli
-version=0.5.5
-revision=2
+version=0.6.4
+revision=1
 wrksrc="cli-${version}"
 build_style=go
 go_import_path="github.com/cli/cli/cmd/gh"
@@ -12,7 +12,7 @@ license="MIT"
 homepage="https://cli.github.com"
 changelog="https://github.com/cli/cli/releases"
 distfiles="https://github.com/cli/cli/archive/v${version}.tar.gz"
-checksum=7c2cfdafe765a598b70b3e6de839590e8fa30a89bedc85799a43bdbc6fd3277e
+checksum=7dbe61da02c8fed6412ed6a3f5ed6163c495275f6e61236f51a27ccb052acf41
 
 pre_build() {
 	local _date

@@ -1,6 +1,6 @@
 # Template file for 'python3-pysol_cards'
 pkgname=python3-pysol_cards
-version=0.8.7
+version=0.8.9
 revision=1
 wrksrc="pysol_cards-${version}"
 build_style=python3-module
@@ -16,7 +16,7 @@ maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="MIT"
 homepage="https://fc-solve.shlomifish.org/"
 distfiles="${PYPI_SITE}/p/pysol_cards/pysol_cards-${version}.tar.gz"
-checksum=b723c94ee5ccaa86ac40208cdd0b10e30f403f0c739731e5484e53a7932eecf8
+checksum=3485e681a2cbec6241359cb4170889cac0919571ca622a4eb10750d2a34f5c05
 
 post_install() {
 	vlicense LICENSE

@@ -1,6 +1,6 @@
 # Template file for 'cmake'
 pkgname=cmake
-version=3.16.4
+version=3.17.1
 revision=1
 build_style=configure
 configure_args="--prefix=/usr --mandir=/share/man --docdir=/share/doc/cmake
@@ -8,12 +8,13 @@ configure_args="--prefix=/usr --mandir=/share/man --docdir=/share/doc/cmake
 make_check_target=test
 makedepends="expat-devel libarchive-devel libcurl-devel libuv-devel
  ncurses-devel rhash-devel"
+checkdepends="pax"
 short_desc="Cross-platform, open-source build system"
 maintainer="Nathan Owens <ndowens04@gmail.com>"
 license="LGPL-2.1-or-later, BSD-3-Clause"
 homepage="https://www.cmake.org"
 distfiles="https://www.cmake.org/files/v${version%.*}/${pkgname}-${version}.tar.gz"
-checksum=9bcc8c114d9da603af9512083ed7d4a39911d16105466beba165ba8fe939ac2c
+checksum=3aa9114485da39cbd9665a0bfe986894a282d5f0882b1dea960a739496620727
 
 if [ "$CROSS_BUILD" ]; then
 	# XXX ugly :-)

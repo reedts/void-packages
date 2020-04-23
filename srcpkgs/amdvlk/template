@@ -1,12 +1,12 @@
 # Template file for 'amdvlk'
 pkgname=amdvlk
-version=2020.Q1.2
+version=2020.Q2.1
 revision=1
-_llpc_commit=f5268c3f6f906a3ae430a1aada7f54f70df091e8
-_xgl_commit=8024f27f9457e3235bf4fcde0d2879bbaae7b0f2
-_pal_commit=45f531beaf2c2b0bc2272e63a2da0022f1b07ccf
-_llvm_project_commit=a163b38723cbc05f3014d4eaa1936c82bbfbf3ea
-_spvgen_commit=e9b2bc3a889ed6ac4f5a47b6c4c58460988e352e
+_llpc_commit=9889f54c9a31743b48f3dafcb8ca0c106ed15da4
+_xgl_commit=1f6143fb951622e06fe7b9396957976fc9feddc7
+_pal_commit=8b2381a1d05cd2c9c4e7cc2eeda053e76d8c9a4a
+_llvm_project_commit=50077fcc15e5844dacd820dcdb02edb23fc00330
+_spvgen_commit=a223c8636f8306697f6fdc86f742b99fbd8c5dbd
 _MetroHash_commit=2b6fee002db6cc92345b02aeee963ebaaf4c0e2f
 _CWPack_commit=b601c88aeca7a7b08becb3d32709de383c8ee428
 archs="i686* x86_64*"
@@ -31,12 +31,12 @@ distfiles="https://github.com/GPUOpen-Drivers/AMDVLK/archive/v-${version}.tar.gz
  https://github.com/GPUOpen-Drivers/spvgen/archive/${_spvgen_commit}.tar.gz
  https://github.com/GPUOpen-Drivers/MetroHash/archive/${_MetroHash_commit}.tar.gz
  https://github.com/GPUOpen-Drivers/CWPack/archive/${_CWPack_commit}.tar.gz"
-checksum="4efa42755db31b4c0663757a42d9e624f6d79038bafe621735c1020cf98862fa
- c0cc57bfd962f061deea21684086fee93ff05f98a411082f8017097534cff53a
- bd4f8ee2e9d8f034849050a1696aa1a0999552688147ebe58ef529cbb51c9b51
- b42d1285b52aed10e6bb2d58aa71e79ed1cd02a3cb53df20dc6e440e14053cb4
- 616f31c857fa925f9074404204bfd0541582efd6e499da59d107ea5ac84fbf32
- 3dc82f3f60b449f7a6a461e893a388d6561377ab24dc4f7939a73927beb70ce4
+checksum="c12dcc0dfd7d0b30892b8f78c138792e2639584f4f838fc04584bc29409989ee
+ 777ab95d75aabc017bd77d9bb2d6592fd95482430eeb37dfe50a11e8f943eee7
+ da0b501be675915ff6786a4be469038f478c28221284ae022a6dc5c58ee3ddd7
+ 0f6253abf01e7a70e44873551c5fff9cde1d671eb4403d7902f98b6c198fd665
+ 9bb5a4e0837e4d56dcb95e12ffea10d737b38534e72bee07d1270f00fcbf0f45
+ 8160c3e01041cfe2a70630fd8020207973e60e71bb41fd1d364b86a1ecbb5bd4
  e8ecf026584dd953e39c3abba2eb04d28b28ed4577482ee70265f0d421fef398
  58ca397f33d62bcfecaecd89eb4ad466a6c33e1c619e5cf742822074f1f7d664"
 nocross=yes
@@ -60,6 +60,16 @@ pre_configure() {
 	esac
 	configure_args+=" -DLLVM_TARGET_ARCH=${_arch}"
 	configure_args+=" -DLLVM_DEFAULT_TARGET_TRIPLE=${XBPS_CROSS_TRIPLET:-$XBPS_TRIPLET}"
+}
+
+pre_build() {
+	# lower burden on build servers, llvm eats too much memory
+	if [ "$XBPS_MAKEJOBS" -gt 2 ]; then
+		echo $XBPS_MAKEJOBS
+		export makejobs="-j$(( $XBPS_MAKEJOBS / 2 ))"
+		echo $XBPS_MAKEJOBS
+	fi
+
 }
 
 do_install() {

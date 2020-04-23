@@ -1,6 +1,6 @@
 # Template file for 'kxmlgui'
 pkgname=kxmlgui
-version=5.67.0
+version=5.69.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -12,7 +12,7 @@ maintainer="John <johnz@posteo.net>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://projects.kde.org/projects/frameworks/kxmlgui"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=edcff92a69a8167bed02f69a06c8cab4be693fd0f3b975ebf611704ced6b3b2d
+checksum=c6d6d5b05af21ebdca03f110a2563b0bad0f069078cb0d94a629624f29450657
 
 kxmlgui-devel_package() {
 	short_desc+=" - development"

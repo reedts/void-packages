@@ -1,6 +1,6 @@
 # Template file for 'fasm'
 pkgname=fasm
-version=1.73.16
+version=1.73.23
 revision=1
 archs="i686* x86_64*"
 wrksrc=fasm
@@ -9,7 +9,7 @@ maintainer="Dmitry Bogatov <KAction@disroot.org>"
 license="BSD-2-Clause"
 homepage="https://flatassembler.net"
 distfiles="https://flatassembler.net/fasm-${version}.tgz"
-checksum=f3d87ab5347c315c48644df989a666390c3e4fb0d40daedd19dea242f8a958c9
+checksum=d250e63cf8b7aa17f0b6c71ab74b673ed04d296b4bbad8ba32bc3b8b35d1f0dc
 nostrip=yes
 
 case ${XBPS_TARGET_MACHINE} in

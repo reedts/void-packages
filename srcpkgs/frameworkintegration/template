@@ -1,6 +1,6 @@
 # Template file for 'frameworkintegration'
 pkgname=frameworkintegration
-version=5.67.0
+version=5.69.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -12,7 +12,7 @@ maintainer="John <johnz@posteo.net>"
 license="LGPL-2.0-or-later"
 homepage="https://projects.kde.org/projects/frameworks/frameworkintegration"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=bb78a4288827182fbd27cb1ae048c4950dcc756fce7d6e73e61f76ef870b7dbb
+checksum=df4ea8703a055ca1456296da7958667b4cb0c2e45af2f98a037b4d5d90a08a50
 
 frameworkintegration-devel_package() {
 	short_desc+=" - development"

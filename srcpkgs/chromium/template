@@ -1,7 +1,7 @@
 # Template file for 'chromium'
 pkgname=chromium
 # See http://www.chromium.org/developers/calendar for the latest version
-version=80.0.3987.132
+version=81.0.4044.113
 revision=1
 archs="i686 x86_64*"
 short_desc="Google's attempt at creating a safer, faster, and more stable browser"
@@ -9,15 +9,16 @@ maintainer="Enno Boland <gottox@voidlinux.org>"
 license="BSD-3-Clause"
 homepage="https://www.chromium.org/"
 distfiles="https://commondatastorage.googleapis.com/chromium-browser-official/${pkgname}-${version}.tar.xz"
-checksum=2c0012059046a5a7e2bf6e9502f1898f1953226d63b724b82fc18226e285c201
+checksum=27cce807a91919211821c4d25be5be8ce48d362166615d4779e886ea0eef5d43
 
 lib32disabled=yes
 nodebug=yes
 nopie=yes  # contains tools that are not PIE, enables PIE itself
 
-build_options="clang js_optimize"
+build_options="clang js_optimize vaapi"
 desc_option_clang="Use clang to build"
 desc_option_js_optimize="Optimize the JS used for Chromium's UI"
+desc_option_vaapi="Enable support for VA-API"
 
 hostmakedepends="$(vopt_if clang clang) yasm python pkgconf perl gperf bison ninja nodejs hwids
  libatomic-devel libevent-devel libglib-devel $(vopt_if js_optimize openjdk)"
@@ -162,6 +163,10 @@ do_configure() {
 		'enable_widevine=true'
 		'enable_hangout_services_extension=true'
 		'is_desktop_linux=true'
+	)
+	
+	conf+=(
+		"use_vaapi=$(vopt_if vaapi true false)"
 	)
 
 	conf+=(
