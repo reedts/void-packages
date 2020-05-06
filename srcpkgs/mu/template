@@ -1,6 +1,6 @@
 # Template file for 'mu'
 pkgname=mu
-version=1.4.1
+version=1.4.4
 revision=1
 build_style=gnu-configure
 hostmakedepends="automake libtool pkg-config texinfo glib-devel"
@@ -11,7 +11,7 @@ maintainer="Benjamin Slade <slade@jnanam.net>"
 license="GPL-3.0-or-later"
 homepage="https://www.djcbsoftware.nl/code/mu/"
 distfiles="https://github.com/djcb/mu/archive/${version}.tar.gz"
-checksum=66ae911abb3d7269514fada08e7a13ad61a205e10209055c41df2f9d17568274
+checksum=211e636fd45151b159e139079ebe387279a7b5e92b70c0ef3e4782c6b6404d82
 
 if [ ! "$CROSS_BUILD" ]; then
 	subpackages="mu4e"
