@@ -1,6 +1,6 @@
 # Template file for 'ktexteditor'
 pkgname=ktexteditor
-version=5.69.0
+version=5.71.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
@@ -13,7 +13,7 @@ maintainer="John <johnz@posteo.net>"
 license="LGPL-2.0-or-later"
 homepage="https://projects.kde.org/projects/frameworks/ktexteditor"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=1662301dd318b7f20f8bf5d402e7628e4ff3012ecb7887d8bf7194e7b9a9c219
+checksum=6e50b6669b288f8e624cba11bca53b78748faf6cb978628f02664038cfa294da
 
 ktexteditor-devel_package() {
 	short_desc+=" - development"

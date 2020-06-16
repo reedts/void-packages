@@ -1,6 +1,6 @@
 # Template file for 'diffoscope'
 pkgname=diffoscope
-version=141
+version=147
 revision=1
 archs=noarch
 build_style=python3-module
@@ -16,4 +16,4 @@ license="GPL-3.0-or-later"
 homepage="https://diffoscope.org/"
 changelog="https://salsa.debian.org/reproducible-builds/diffoscope/raw/master/debian/changelog"
 distfiles="${PYPI_SITE}/d/diffoscope/diffoscope-${version}.tar.gz"
-checksum=66a8d066f8f5ac18d02aa5148ada7c6f4ab094cd64d29e72b319c5e7df151fc0
+checksum=5b5fdaa4d900c891b319e4b9a006eb16824a0b61fdbe15e75acbbe35602e2da6

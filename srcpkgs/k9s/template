@@ -1,7 +1,7 @@
 # Template file for 'k9s'
 pkgname=k9s
-version=0.19.2
-revision=2
+version=0.20.5
+revision=1
 build_style=go
 go_import_path="github.com/derailed/k9s"
 go_ldflags="-X ${go_import_path}/cmd.version=${version}"
@@ -10,4 +10,4 @@ maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="Apache-2.0"
 homepage="https://k9scli.io/"
 distfiles="https://github.com/derailed/k9s/archive/v${version}.tar.gz"
-checksum=748ef4be4dc7d14c8886125e80bae0743c3a309c0cee65a4857604ac6682a2ce
+checksum=baaaa57482e9345245261eb14acaeb591acc0fced7c61fff6526c98f3a933b17

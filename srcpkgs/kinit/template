@@ -1,6 +1,6 @@
 # Template file for 'kinit'
 pkgname=kinit
-version=5.69.0
+version=5.71.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -12,7 +12,7 @@ maintainer="John <johnz@posteo.net>"
 license="LGPL-2.0-only"
 homepage="https://projects.kde.org/projects/frameworks/kinit"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=07c63dc0cd397d9245a97d8b316ecca404106c742f0cf3550ca6dd25afc7de56
+checksum=6ea625bced2c19b0f3e5bb504775dd6764358f02412364a16cbad731c5c299b6
 
 kinit-devel_package() {
 	short_desc+=" - development"

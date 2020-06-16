@@ -1,6 +1,6 @@
 # Template file for 'Komikku'
 pkgname=Komikku
-version=0.14.0
+version=0.15.1
 revision=1
 archs=noarch
 wrksrc=Komikku-v${version}
@@ -16,4 +16,4 @@ maintainer="Lorem <notloremipsum@protonmail.com>"
 license="GPL-3.0-or-later"
 homepage="https://gitlab.com/valos/Komikku"
 distfiles="${homepage}/-/archive/v${version}/Komikku-v${version}.tar.gz"
-checksum=5d12938f11fc4ccd588818ad175bb8c61ec2c7c2e9052e78035d2a8c33d5b473
+checksum=983641da25a6d3158e3fc248d450ec1219a22af014803e49a71a56736919feeb

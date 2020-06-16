@@ -1,6 +1,6 @@
 # Template file for 'mpop'
 pkgname=mpop
-version=1.4.8
+version=1.4.10
 revision=1
 build_style=gnu-configure
 hostmakedepends="pkg-config"
@@ -10,4 +10,4 @@ maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="GPL-3.0-or-later"
 homepage="https://marlam.de/mpop/"
 distfiles="https://marlam.de/mpop/releases/mpop-${version}.tar.xz"
-checksum=13e97f8d1828f70c09ccdaab6c8dc7bebefaf5e28fc4afa4faf1bb80030e4805
+checksum=9e9b6523f08df50a3d3eec75d94d4c0104ee016c0c913baaf8fbf178bf828388

@@ -1,6 +1,6 @@
 # Template file for 'kconfig'
 pkgname=kconfig
-version=5.69.0
+version=5.71.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -11,7 +11,7 @@ maintainer="John <johnz@posteo.net>"
 license="LGPL-2.0-only, LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://projects.kde.org/projects/frameworks/kconfig"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=18fd38af0fd49fa52cbef2f5c2fc060dec75876b02ff8b9e8cf55a2de0131e28
+checksum=618ff0d168abf8fb73dc83431b9a76f7859d522bea100ff07c7e1632e129e3f4
 
 kconfig-devel_package() {
 	short_desc+=" - development"

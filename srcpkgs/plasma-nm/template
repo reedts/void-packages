@@ -1,6 +1,6 @@
 # Template file for 'plasma-nm'
 pkgname=plasma-nm
-version=5.18.4.1
+version=5.19.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -14,8 +14,8 @@ short_desc="NetworkManager Plasma applet"
 maintainer="John <johnz@posteo.net>"
 license="LGPL-2.1-or-later"
 homepage="https://projects.kde.org/projects/plasma/plasma-nm"
-distfiles="${KDE_SITE}/plasma/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=a7ae36b47c2ee85590b01a1e03fae179d243bb4e718417be0b8e93e7dfc77e6a
+distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
+checksum=de4a6c3609e20c4ac15614286e346185c4a9fb1bd7ba73f15b74af6c2d6e29c0
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" kpackage-devel kconfig-devel kcoreaddons-devel plasma-framework"

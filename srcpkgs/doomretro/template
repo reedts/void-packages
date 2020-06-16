@@ -1,6 +1,6 @@
 # Template file for 'doomretro'
 pkgname=doomretro
-version=3.5.5
+version=3.5.10
 revision=1
 build_style=cmake
 hostmakedepends="pkg-config"
@@ -10,4 +10,4 @@ maintainer="Benjamín Albiñana <benalb@gmail.com>"
 license="GPL-3.0-or-later"
 homepage="https://www.doomretro.com"
 distfiles="https://github.com/bradharding/doomretro/archive/v${version}.tar.gz"
-checksum=ab6359d93b47be283db10c881d16da697c77d3517558e61226b6d5c184666771
+checksum=c93bce311836b88e1a0ef5c262187f748d3b527a0a071c136cbe3422dc1b07d1

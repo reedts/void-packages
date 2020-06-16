@@ -1,6 +1,6 @@
 # Template file for 'trident-networkmgr'
 pkgname=trident-networkmgr
-version=2020.03.29.1
+version=2020.06.07
 revision=1
 wrksrc="trident-utilities-${version}"
 build_wrksrc="src-qt5/networkmgr"
@@ -13,7 +13,7 @@ maintainer="Ken Moore <ken@project-trident.org>"
 license="BSD-2-Clause"
 homepage="https://github.com/project-trident/trident-utilities"
 distfiles="https://github.com/project-trident/trident-utilities/archive/v${version}.tar.gz"
-checksum=87fc1b547f1da884dc9e9403914949e6f069ee5984484863d4f24c0b76189325
+checksum=b25389296d9b2e80c28fe299001be1158442f6a584f2999dce0a20ff29bbea3b
 
 post_install() {
 	vlicense ${wrksrc}/LICENSE

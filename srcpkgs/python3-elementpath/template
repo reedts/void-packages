@@ -1,6 +1,6 @@
 # Template file for 'python3-elementpath'
 pkgname=python3-elementpath
-version=1.4.3
+version=1.4.5
 revision=1
 archs=noarch
 wrksrc=elementpath-${version}
@@ -13,13 +13,13 @@ maintainer="Đoàn Trần Công Danh <congdanhqx@gmail.com>"
 license="MIT"
 homepage="https://github.com/sissaschool/elementpath"
 distfiles="${PYPI_SITE}/e/elementpath/elementpath-${version}.tar.gz"
-checksum=f667c55b5c77d78aacda82d1f6da189cdcf071a04b4093f48e22c89ce1a6559f
+checksum=37d1e4a62a7955281a99e0b0f322da08e32371dadf6aba5e60fd8471009dd98a
 
 post_patch() {
 	# locale handling in musl is NOT that ideal,
-	# those tests is broken on musl
+	# those tests are broken on musl
 	if [ "$XBPS_TARGET_LIBC" = musl ]; then
-		vsed -i tests/test_xpath2_parser.py \
+		vsed -i tests/test_xpath2_functions.py \
 			-e "/compare.*Strassen.* 1/d" \
 			-e "/with self\.assertRaises(locale\.Error)/,+3d"
 	fi

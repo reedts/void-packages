@@ -1,6 +1,6 @@
 # Template file for 'polkit-kde-agent'
 pkgname=polkit-kde-agent
-version=5.18.4.1
+version=5.19.0
 revision=1
 wrksrc="${pkgname}-1-${version}"
 build_style=cmake
@@ -12,5 +12,5 @@ short_desc="KDE PolKit auth agent"
 maintainer="John <johnz@posteo.net>"
 license="GPL-2.0-or-later"
 homepage="https://projects.kde.org/projects/plasma/polkit-kde-agent"
-distfiles="${KDE_SITE}/plasma/${version%.*}/${pkgname}-1-${version}.tar.xz"
-checksum=b1e20048d1f917dfeabb150d1147a6add02e7cfb333df8d73f9fabf0a643ff48
+distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-1-${version}.tar.xz"
+checksum=51187c0fda455890b57bc3ec6513af08cdba2cbb5f1d6b1e50a364f30e4a4584

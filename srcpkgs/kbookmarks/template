@@ -1,6 +1,6 @@
 # Template file for 'kbookmarks'
 pkgname=kbookmarks
-version=5.69.0
+version=5.71.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -11,7 +11,7 @@ maintainer="John <johnz@posteo.net>"
 license="LGPL-2.0-only"
 homepage="https://projects.kde.org/projects/frameworks/kbookmarks"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=9bd8c3226cde3fa307cc72875fe3f2b768949c16ef3b198e01a49a39b1624ea4
+checksum=e00db1e62a769863a1bf90bb508f108f2740298aa40173cad34ef34a1c23a01a
 
 kbookmarks-devel_package() {
 	short_desc+=" - development"
