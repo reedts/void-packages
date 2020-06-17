@@ -1,6 +1,6 @@
 # Template file for 'breeze'
 pkgname=breeze
-version=5.18.5
+version=5.19.1
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -14,7 +14,7 @@ maintainer="John <johnz@posteo.net>"
 license="GPL-2.0-or-later"
 homepage="https://projects.kde.org/projects/plasma/breeze"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
-checksum=1d08dfd24df4a4fcacad1e3759e559e82f6014ba63dc75dc32a24de6cd133563
+checksum=b93d34c0d2b7a47440c0c324e0dacd23cfa82cba2929d568cc9091910bb1ce6e
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" kpackage-devel kconfig-devel kcoreaddons-devel plasma-framework"
