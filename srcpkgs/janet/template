@@ -1,6 +1,6 @@
 # Template file for 'janet'
 pkgname=janet
-version=1.10.0
+version=1.11.1
 revision=1
 build_style=meson
 short_desc="Dynamic Lisp dialect and bytecode VM"
@@ -8,7 +8,7 @@ maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="MIT"
 homepage="https://janet-lang.org/"
 distfiles="https://github.com/janet-lang/janet/archive/v${version}.tar.gz"
-checksum=b12b2609ab69a2e681446e44368e3b72bdad15b550471365fd8580e2265d3389
+checksum=df1b423ca29731f626899475ccd9cf6522ab4fed68b6e0c1fe4a188f7a032137
 patch_args="-Np1"
 
 post_install() {
