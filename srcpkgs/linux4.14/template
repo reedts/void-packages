@@ -1,6 +1,6 @@
 # Template file for 'linux4.14'
 pkgname=linux4.14
-version=4.14.188
+version=4.14.199
 revision=1
 wrksrc="linux-${version}"
 short_desc="Linux kernel and modules (${version%.*} series)"
@@ -8,7 +8,7 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-only"
 homepage="http://www.kernel.org"
 distfiles="https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-${version}.tar.xz"
-checksum=766fe01387b1d1b7bd37ca45a5048cdad13e3a51c6c43746dbb657a0ba67064b
+checksum=02f3432a262b3804745501f8c3c51d735133af48a39909df8b031d0b9653d4f9
 python_version=2 #unverified
 patch_args="-Np1"
 

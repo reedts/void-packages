@@ -1,6 +1,6 @@
 # Template file for 'kmime'
 pkgname=kmime
-version=20.04.3
+version=20.08.2
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 gettext"
@@ -10,7 +10,7 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/kmime-${version}.tar.xz"
-checksum=a416e16f61a2dd4274b1abc54af71ffe73b01c93137bc1fa462642bb947d150c
+checksum=9f23e2814e62ae6c4a67fd3223315ef875776f9d098b4d11c7d06a726a725435
 
 if [ "CROSS_BUILD" ];then
 	hostmakedepends+=" qt5-qmake qt5-host-tools"

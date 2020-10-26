@@ -1,8 +1,7 @@
 # Template file for 'rex'
 pkgname=rex
-version=1.12.0
+version=1.13.0
 revision=1
-archs=noarch
 wrksrc="Rex-${version}"
 build_style=perl-module
 hostmakedepends="perl perl-AWS-Signature4 perl-Clone-Choose
@@ -21,7 +20,7 @@ maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="Apache-2.0"
 homepage="http://www.rexify.org/"
 distfiles="https://cpan.metacpan.org/authors/id/F/FE/FERKI/Rex-${version}.tar.gz"
-checksum=b5958128253b1c98904ed3ff0d6902658394ab4a2a4896a7abedd6b8914f61bd
+checksum=341c1f52c75b40ba73745beeea284b18c1770e4c395147af6547ac1d4e9c5b09
 
 post_install() {
 	vinstall share/rex-tab-completion.bash 644 usr/share/bash-completion/completions rex
