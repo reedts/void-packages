@@ -2,6 +2,7 @@
 pkgname=owncloudclient
 version=2.7.2
 revision=1
+wrksrc="client-${version}"
 build_style=cmake
 configure_args="-Wno-dev -DNO_SHIBBOLETH=TRUE"
 hostmakedepends="pkg-config extra-cmake-modules"
@@ -16,7 +17,6 @@ license="GPL-2.0-or-later"
 homepage="https://www.owncloud.org"
 distfiles="https://github.com/owncloud/client/archive/v${version}.tar.gz"
 checksum=11149a61a7a8c3ac08a2869fe1754916c004aefeeba47eea860080b7a0e4441b
-wrksrc="client-${version}"
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" qt5-host-tools qt5-tools-devel"
