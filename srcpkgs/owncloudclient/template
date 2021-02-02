@@ -1,6 +1,6 @@
 # Template file for 'owncloudclient'
 pkgname=owncloudclient
-version=2.7.3
+version=2.7.5
 revision=1
 wrksrc="client-${version}"
 build_style=cmake
@@ -16,7 +16,7 @@ maintainer="Nathan Owens <ndowens@artixlinux.org>"
 license="GPL-2.0-or-later"
 homepage="https://www.owncloud.org"
 distfiles="https://github.com/owncloud/client/archive/v${version}.tar.gz"
-checksum=3f18e65d78264510b3bb4c74a528a229f68791d9dd54678c9c0aa40aaf284514
+checksum=c2558a3a780c136446ce818bfdd406aa5417a71f9cfd0cf56dc51c7516117c3a
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" qt5-host-tools qt5-tools-devel"
