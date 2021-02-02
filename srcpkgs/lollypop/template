@@ -1,6 +1,6 @@
 # Template file for 'lollypop'
 pkgname=lollypop
-version=1.4.7
+version=1.4.15
 revision=1
 build_style=meson
 hostmakedepends="cmake git glib-devel gobject-introspection intltool itstool pkg-config"
@@ -13,4 +13,4 @@ maintainer="Jürgen Buchmüller <pullmoll@t-online.de>"
 license="GPL-3.0-or-later"
 homepage="https://wiki.gnome.org/Apps/Lollypop"
 distfiles="https://adishatz.org/lollypop/${pkgname}-${version}.tar.xz"
-checksum=748ffae06ceea356ae7fb4948e470f1c9fb4c2d8bdf395327ef9c247617d6b3d
+checksum=084f3e731eb6002940ba13e9d1592e5e1de923d8cc623d7fe3f77d861626826d
