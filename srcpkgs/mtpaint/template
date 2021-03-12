@@ -1,8 +1,8 @@
 # Template file for 'mtpaint'
 pkgname=mtpaint
-version=3.50.05
+version=3.50.07
 revision=1
-_commit=96cd3788c4f89973350981dbc71d449cabdac297
+_commit=da57515755c9f44182e31eb316869f890c0db817
 wrksrc="mtPaint-${_commit}"
 build_style=configure
 configure_args="--prefix=/usr --mandir=/usr/share/man
@@ -18,7 +18,7 @@ license="GPL-3.0-or-later"
 homepage="http://mtpaint.sourceforge.net/"
 changelog="https://raw.githubusercontent.com/wjaguar/mtPaint/master/NEWS"
 distfiles="https://github.com/wjaguar/mtPaint/archive/${_commit}.tar.gz"
-checksum=cd01f281414c30d47c99042c233836c93d596902ef473e9cbe90ae34f05b8575
+checksum=a2c37fd7b44ffbb455c0cd5c5616273829c315e5143d044c750807bdcf8971dc
 
 post_install() {
 	vdoc doc/vcode.t2t

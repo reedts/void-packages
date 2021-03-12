@@ -1,6 +1,6 @@
 # Template file for 'circleci-cli'
 pkgname=circleci-cli
-version=0.1.9578
+version=0.1.15108
 revision=1
 build_style=go
 go_import_path=github.com/CircleCI-Public/${pkgname}
@@ -11,7 +11,7 @@ maintainer="Gabriel Sanches <gabriel@gsr.dev>"
 license="MIT"
 homepage="https://circleci-public.github.io/circleci-cli/"
 distfiles="https://github.com/CircleCI-Public/${pkgname}/archive/v${version}.tar.gz"
-checksum=d5dac07d27d97ee41dced89cf2b36dfeea17906343b6a6a21c1d8c4ca34a78a0
+checksum=930bc37c181389cebbbcf9a2b836eb55f8c7ebcb9e853666ce5f4213b084a551
 
 pre_build() {
 	packr2

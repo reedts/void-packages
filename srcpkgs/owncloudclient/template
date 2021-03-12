@@ -9,7 +9,7 @@ hostmakedepends="pkg-config extra-cmake-modules"
 makedepends="qtkeychain-qt5-devel sqlite-devel qt5-declarative-devel
  qt5-tools-devel qt5-plugin-odbc qt5-plugin-tds qt5-plugin-pgsql qt5-plugin-mysql
  qt5-plugin-sqlite"
-depends="qt5-plugin-sqlite"
+depends="qt5-plugin-sqlite qt5-svg"
 conf_files="/etc/ownCloud/sync-exclude.lst"
 short_desc="Connect to ownCloud servers"
 maintainer="Nathan Owens <ndowens@artixlinux.org>"
