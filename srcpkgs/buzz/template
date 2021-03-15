@@ -1,0 +1,15 @@
+# Template file for 'buzz'
+pkgname=buzz
+version=1.5.0
+revision=1
+archs="x86_64"
+build_style=cargo
+hostmakedepends="pkg-config"
+makedepends="openssl-devel"
+depends="openssl"
+short_desc="A simple system tray application for notifying about unseen e-mail"
+maintainer="reedts <j.reedts@gmail.com>"
+license="MIT"
+homepage="https://github.com/jonhoo/buzz"
+distfiles="https://github.com/jonhoo/buzz/archive/v${version}.tar.gz"
+checksum=12b4e8eb14274fd9eb1a5ab963e14e8120336e287bd9aa67d7bdd0c35e81e88f
