@@ -1563,7 +1563,7 @@ libcheck.so.0 check-0.9.12_1
 liblxc.so.1 liblxc-4.0.6_2
 libtcmalloc.so.4 gperftools-2.1_1
 libaio.so.1 libaio-0.3.109_1
-libofx.so.7 libofx-0.9.11_1
+libofx.so.7 libofx-0.10.1_1
 libsigsegv.so.2 libsigsegv-2.10_2
 libfprint.so.0 libfprint0-1.0_1
 libfprint-2.so.2 libfprint-1.90.7_1
@@ -3532,9 +3532,9 @@ libupstart.so.1 libupstart-1.13.3_1
 librtas.so.2 librtas-2.0.2_1
 librtasevent.so.2 librtas-2.0.2_1
 libbroker.so.2 zeek-3.2.4_2
-libcaf_core.so.0.17.6 zeek-3.2.4_2
-libcaf_io.so.0.17.6 zeek-3.2.4_2
-libcaf_openssl.so.0.17.6 zeek-3.2.4_2
+libcaf_core.so.0.18.0 zeek-4.0.0_1
+libcaf_io.so.0.18.0 zeek-4.0.0_1
+libcaf_openssl.so.0.18.0 zeek-4.0.0_1
 libbinpac.so.0 zeek-3.2.4_2
 libllhttp.so.1 llhttp-1.0.1_1
 libpinyin.so.13 libpinyin-2.2.1_1
@@ -3894,7 +3894,7 @@ libJudy.so.1 judy-1.0.5_1
 libsignal-protocol-c.so.2 libsignal-protocol-c-2.3.3_2
 libKSeExprUI.so.4.0.1.0 seexpr-krita-4.0.1.0_1
 libKSeExpr.so.4.0.1.0 seexpr-krita-4.0.1.0_1
-liburing.so.1 liburing-0.7_1
+liburing.so.2 liburing-2.0_1
 libbson-1.0.so.0 libbson-1.17.4_2
 libsonic.so.0 libsonic-0.2.0_1
 libtickit.so.3 libtickit-0.4.1_1
@@ -3970,3 +3970,4 @@ libwayland-cursor++.so.0 libwaylandpp-0.2.8_1
 libwayland-egl++.so.0 libwaylandpp-0.2.8_1
 libwayland-client-extra++.so.0 libwaylandpp-0.2.8_1
 libspdlog.so.1 libspdlog-1.8.2_2
+libmd.so.0 libmd-1.0.3_1
