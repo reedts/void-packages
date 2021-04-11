@@ -1,0 +1,25 @@
+# Template file for 'nerd-fonts-dejavu-ttf'
+pkgname=nerd-fonts-dejavu-ttf
+version=2.1.0
+revision=1
+depends="font-util xbps-triggers"
+conflicts="nerd-fonts-ttf"
+short_desc="Iconic font aggregator, collection and patcher"
+maintainer="reedts <j.reedts@gmail.com>"
+license="MIT"
+homepage="https://nerdfonts.com"
+distfiles="https://github.com/ryanoasis/nerd-fonts/archive/v${version}.tar.gz"
+checksum="a084ca91a174b547bab4523507824c76aa91ebcf38f9256a4ffd181813f87bd8"
+wrksrc="nerd-fonts-${version}"
+
+do_install() {
+	vmkdir /usr/share/fonts/NerdFonts/ttf
+
+	# get DejaVu patched ttf fonts
+	find patched-fonts/DejaVuSansMono -name '*.ttf' -exec install -Dm644 '{}' ${DESTDIR}/usr/share/fonts/NerdFonts/ttf \;
+
+	# remove windows fonts
+	find ${DESTDIR}/usr/share/fonts/NerdFonts -name '*Windows Compatible.*tf' -delete
+
+	vlicense LICENSE
+}
