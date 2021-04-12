@@ -2,24 +2,27 @@
 pkgname=nerd-fonts-dejavu-ttf
 version=2.1.0
 revision=1
+create_wrksrc=yes
+hostmakedepends="unzip"
 depends="font-util xbps-triggers"
-conflicts="nerd-fonts-ttf"
 short_desc="Iconic font aggregator, collection and patcher"
 maintainer="reedts <j.reedts@gmail.com>"
 license="MIT"
 homepage="https://nerdfonts.com"
-distfiles="https://github.com/ryanoasis/nerd-fonts/archive/v${version}.tar.gz"
-checksum="a084ca91a174b547bab4523507824c76aa91ebcf38f9256a4ffd181813f87bd8"
-wrksrc="nerd-fonts-${version}"
+distfiles="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/DejaVuSansMono.zip"
+checksum=3fbcc4904c88f68d24c8b479784a1aba37f2d78b1162d21f6fc85a58ffcc0e0f
+conflicts="nerd-fonts-ttf"
+font_dirs="/usr/share/fonts/NerdFonts/ttf"
+
+do_extract() {
+	unzip -d ${wrksrc} ${XBPS_SRCDISTDIR}/${pkgname}-${version}/DejaVuSansMono.zip
+}
 
 do_install() {
 	vmkdir /usr/share/fonts/NerdFonts/ttf
 
-	# get DejaVu patched ttf fonts
-	find patched-fonts/DejaVuSansMono -name '*.ttf' -exec install -Dm644 '{}' ${DESTDIR}/usr/share/fonts/NerdFonts/ttf \;
+	find . -name '*.ttf' -exec install -Dm644 '{}' ${DESTDIR}/usr/share/fonts/NerdFonts/ttf \;
 
 	# remove windows fonts
 	find ${DESTDIR}/usr/share/fonts/NerdFonts -name '*Windows Compatible.*tf' -delete
-
-	vlicense LICENSE
 }
