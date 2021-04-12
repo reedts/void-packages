@@ -21,8 +21,5 @@ do_extract() {
 do_install() {
 	vmkdir /usr/share/fonts/NerdFonts/ttf
 
-	find . -name '*.ttf' -exec install -Dm644 '{}' ${DESTDIR}/usr/share/fonts/NerdFonts/ttf \;
-
-	# remove windows fonts
-	find ${DESTDIR}/usr/share/fonts/NerdFonts -name '*Windows Compatible.*tf' -delete
+	find . -name "*.ttf" -not -name "*Windows Compatible.*tf" -exec install -Dm644 '{}' ${DESTDIR}/usr/share/fonts/NerdFonts/ttf \;
 }
