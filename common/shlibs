@@ -957,7 +957,7 @@ libfftw3l_omp.so.3 libfftw-3.3.5_1
 libfftw3f_threads.so.3 libfftw-3.3_1
 libfftw3f.so.3 libfftw-3.3_1
 libfftw3f_omp.so.3 libfftw-3.3.5_1
-libfluidsynth.so.2 libfluidsynth-2.1.1_1
+libfluidsynth.so.3 libfluidsynth-2.2.0_1
 liblo.so.7 liblo-0.26_1
 libvamp-sdk.so.2 libvamp-plugin-sdk-2.2_1
 librubberband.so.2 librubberband-1.6.0_1
@@ -3153,12 +3153,12 @@ libGammu.so.8 gammu-1.39.0_1
 libz3.so z3-4.6.0_2
 libngspice.so.0 ngspice-27_2
 libvulkan.so.1 vulkan-loader-1.0.57.0_1
-libembb_mtapi_cpp.so embb-devel-1.0.0_1
-libembb_mtapi_c.so embb-devel-1.0.0_1
-libembb_mtapi_network_c.so embb-devel-1.0.0_1
-libembb_base_cpp.so embb-devel-1.0.0_1
-libembb_base_c.so embb-devel-1.0.0_1
-libhpdf.so Haru-devel-2.3.0_1
+libembb_mtapi_cpp.so embb-1.0.0_3
+libembb_mtapi_c.so embb-1.0.0_3
+libembb_mtapi_network_c.so embb-1.0.0_3
+libembb_base_cpp.so embb-1.0.0_3
+libembb_base_c.so embb-1.0.0_3
+libhpdf-2.3.0.so Haru-2.3.0_3
 libKF5Contacts.so.5 kcontacts-5.63.0_1
 libKF5AkonadiPrivate.so.5 akonadi5-17.12.0_1
 libKF5AkonadiCore.so.5 akonadi5-17.12.0_1
