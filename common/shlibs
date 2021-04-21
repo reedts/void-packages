@@ -133,7 +133,7 @@ libnvidia-gtk2.so.346.47 nvidia-gtklibs-346.47_1 ignore
 libnvidia-gtk3.so.346.47 nvidia-gtklibs-346.47_1 ignore
 libnvidia-glcore.so.390.87 nvidia390-libs-390.87_1 ignore
 libnvidia-glsi.so.346.72 nvidia-libs-346.72_1 ignore
-libnvidia-fatbinaryloader.so.390.141 nvidia390-libs-390.141_1 ignore
+libnvidia-fatbinaryloader.so.390.143 nvidia390-libs-390.143_1 ignore
 libnvidia-fatbinaryloader.so.430.40 nvidia-libs-430.40_1 ignore
 libglapi.so.0 libglapi-7.11_1
 libgbm.so.1 libgbm-9.0_1
@@ -412,6 +412,7 @@ libproxy.so.1 libproxy-0.4.6_1
 libmoar.so MoarVM-2015.11_1
 libFLAC.so.8 libflac-1.2.1_1
 libFLAC++.so.6 libflac-1.2.1_1
+libField3D.so.1.7 Field3D-1.7.3_1
 libMAC.so.6 libMAC-5.28_1
 libmad.so.0 libmad-0.15.1b_1
 libmatroska.so.7 libmatroska-1.6.0_1
@@ -2163,8 +2164,8 @@ libgom-1.0.so.0 gom-0.3.0_1
 libetpan.so.20 libetpan-1.9.3_4
 libxmp.so.4 libxmp-4.3.7_1
 libKF5ThreadWeaver.so.5 threadweaver-5.26.0_1
-libOpenImageIO_Util.so.1.8 openimageio-1.8.12_1
-libOpenImageIO.so.1.8 openimageio-1.8.12_1
+libOpenImageIO_Util.so.2.2 openimageio-2.2.13.1_1
+libOpenImageIO.so.2.2 openimageio-2.2.13.1_1
 libOpenColorIO.so.1 opencolorio-1.0.8_1
 libyaml-cpp.so.0.6 yaml-cpp-0.6.2_1
 libpaper.so.1 libpaper-1.1.24_1
@@ -2968,6 +2969,7 @@ libPocoRedis.so.64 poco-1.9.4_3
 libPocoEncodings.so.64 poco-1.9.4_3
 libPocoNetSSL.so.64 poco-1.9.4_3
 libPocoCrypto.so.64 poco-1.9.4_3
+libPtex.so ptex-2.3.2_1
 libopenblas.so.0 openblas-0.2.19_1
 librtaudio.so.6 rtaudio-5.1.0_1
 librtmidi.so.5 rtmidi-4.0.0_1
@@ -2992,6 +2994,8 @@ libyaz_icu.so.5 yaz-5.23.1_1
 libyaz.so.5 yaz-5.23.1_1
 libyaz_server.so.5 yaz-5.23.1_1
 libgcab-1.0.so.0 gcab-0.7_1
+libwpe-1.0.so.1 libwpe-1.10.0_1
+libWPEBackend-fdo-1.0.so.1 wpebackend-fdo-1.8.3_1
 libliveMedia.so.81 live555-2020.08.11_2
 libgroupsock.so.8 live555-2020.08.11_2
 libUsageEnvironment.so.3 live555-2020.08.11_2
