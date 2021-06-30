@@ -1,5 +1,5 @@
---- Gruntfile.js
-+++ Gruntfile.js
+--- a/Gruntfile.js
++++ b/Gruntfile.js
 @@ -203,9 +203,7 @@ module.exports = grunt => {
    });
  
