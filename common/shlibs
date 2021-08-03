@@ -57,7 +57,7 @@ libitm.so.1 libitm-4.7.3_1
 liblto_plugin.so.0 gcc-4.7.3_1
 libgcc_s.so.1 libgcc-4.4.0_1
 libgo.so.16 libgo-10.2.0_1
-libperl.so.5.32 perl-5.32.0_1
+libperl.so.5.34 perl-5.34.0_1
 libgmp.so.10 gmp-5.0.1_1
 libgmpxx.so.4 gmpxx-6.0.0_2
 libmpfr.so.6 mpfr-4.0.0_1
@@ -131,7 +131,7 @@ libnvidia-gtk2.so.346.47 nvidia-gtklibs-346.47_1 ignore
 libnvidia-gtk3.so.346.47 nvidia-gtklibs-346.47_1 ignore
 libnvidia-glcore.so.390.87 nvidia390-libs-390.87_1 ignore
 libnvidia-glsi.so.346.72 nvidia-libs-346.72_1 ignore
-libnvidia-fatbinaryloader.so.390.143 nvidia390-libs-390.143_1 ignore
+libnvidia-fatbinaryloader.so.390.144 nvidia390-libs-390.144_1 ignore
 libnvidia-fatbinaryloader.so.430.40 nvidia-libs-430.40_1 ignore
 libglapi.so.0 libglapi-7.11_1
 libgbm.so.1 libgbm-9.0_1
@@ -141,7 +141,7 @@ librsvg-2.so.2 librsvg-2.26.0_1
 libdbus-1.so.3 dbus-libs-1.2.10_1
 libdbus-glib-1.so.2 dbus-glib-0.80_1
 libxml2.so.2 libxml2-2.7.0_1
-libxlsxwriter.so.1 libxlsxwriter-1.0.0_1
+libxlsxwriter.so.2.1 libxlsxwriter-1.1.0_1
 libfuse.so.2 fuse-2.8.1_1
 libfuse3.so.3 fuse3-3.1.0_1
 libXext.so.6 libXext-1.0.5_1
@@ -340,7 +340,7 @@ libMagickCore-6.Q16.so.7 libmagick6-6.9.11.61_1
 libMagickWand-6.Q16.so.7 libmagick6-6.9.11.61_1
 libMagick++-6.Q16.so.9 libmagick6-6.9.12.1_1
 libltdl.so.7 libltdl-2.2.6_1
-libpoppler.so.110 libpoppler110-21.05.0_1
+libpoppler.so.111 libpoppler-21.07.0_1
 libpoppler-glib.so.8 poppler-glib-0.18.2_1
 libpoppler-cpp.so.0 poppler-cpp-0.18.2_1
 libpoppler-qt5.so.1 poppler-qt5-0.31.0_1
@@ -434,7 +434,7 @@ libKScreenLocker.so.5 kscreenlocker-5.8.4_1
 libparted.so.2 libparted-3.1_1
 libparted-fs-resize.so.0 libparted-3.1_1
 libntfs-3g.so.88 ntfs-3g-2017.3.23_1
-libruby.so.2.7 ruby-2.7.2_3
+libruby.so.3.0 ruby-3.0.2_1
 libprocessui.so.9 libksysguard-5.18.90_1
 libksignalplotter.so.9 libksysguard-5.18.90_1
 libksgrd.so.9 libksysguard-5.18.90_1
@@ -1837,6 +1837,12 @@ libawt_xawt.so openjdk10-bootstrap-10.0.2p13_1
 libjava.so openjdk10-bootstrap-10.0.2p13_1
 libjli.so openjdk10-bootstrap-10.0.2p13_1
 libjvm.so openjdk10-bootstrap-10.0.2p13_1
+libjawt.so mandrel-21.1.0.0_1
+libawt.so mandrel-21.1.0.0_1
+libawt_xawt.so mandrel-21.1.0.0_1
+libjava.so mandrel-21.1.0.0_1
+libjli.so mandrel-21.1.0.0_1
+libjvm.so mandrel-21.1.0.0_1
 libucl.so.5 libucl-0.8.1_6
 libhandle.so.1 xfsprogs-3.2.1_1
 libnfnetlink.so.0 libnfnetlink-1.0.1_1
@@ -2607,7 +2613,7 @@ libhwloc.so.15 libhwloc-2.0.4_1
 libnetfilter_cttimeout.so.1 libnetfilter_cttimeout-1.0.0_1
 libnetfilter_cthelper.so.0 libnetfilter_cthelper-1.0.0_1
 libnetfilter_queue.so.1 libnetfilter_queue-1.0.2_1
-libfilezilla.so.13 libfilezilla-0.28.0_1
+libfilezilla.so.15 libfilezilla-0.30.0_1
 libtommath.so.1 libtommath-1.0_1
 libKF5ItemViews.so.5 kitemviews-5.26.0_1
 libunicorn.so.1 unicorn-1.0_1
@@ -2990,7 +2996,7 @@ libdouble-conversion.so.1 double-conversion-2.0.1_1
 libspectrum.so.8 libspectrum-1.2.2_1
 libbearssl.so.0 bearssl-0.3_1
 libXfont2.so.2 libXfont2-2.0.1_1
-libqalculate.so.21 libqalculate-3.0.0_1
+libqalculate.so.22 libqalculate-3.20.1_1
 libweston-9.so.0 weston-9.0.0_1
 libostree-1.so.1 libostree-2020.8_2
 librhash.so.0 rhash-1.3.4_1
@@ -3642,18 +3648,18 @@ liboblibs.so.0.1 oblibs-0.1.1.1_1
 libaal-1.0.so.7 libaal-1.0.7_1
 libaal-minimal.so.0 libaal-1.0.7_1
 libcli.so.1.9 libcli-1.9.8.4_1
-libaddress_sorting.so.16 grpc-1.38.0_1
-libgpr.so.16 grpc-1.38.0_1
-libgrpc++.so.1.38 grpc-1.38.0_1
-libgrpc++_alts.so.1.38 grpc-1.38.0_1
-libgrpc++_error_details.so.1.38 grpc-1.38.0_1
-libgrpc++_reflection.so.1.38 grpc-1.38.0_1
-libgrpc++_unsecure.so.1.38 grpc-1.38.0_1
-libgrpc.so.16 grpc-1.38.0_1
-libgrpc_plugin_support.so.1.38 grpc-1.38.0_1
-libgrpc_unsecure.so.16 grpc-1.38.0_1
-libgrpcpp_channelz.so.1.38 grpc-1.38.0_1
-libupb.so.16 grpc-1.38.0_1
+libaddress_sorting.so.18 grpc-1.39.0_1
+libgpr.so.18 grpc-1.39.0_1
+libgrpc++.so.1.39 grpc-1.39.0_1
+libgrpc++_alts.so.1.39 grpc-1.39.0_1
+libgrpc++_error_details.so.1.39 grpc-1.39.0_1
+libgrpc++_reflection.so.1.39 grpc-1.39.0_1
+libgrpc++_unsecure.so.1.39 grpc-1.39.0_1
+libgrpc.so.18 grpc-1.39.0_1
+libgrpc_plugin_support.so.1.39 grpc-1.39.0_1
+libgrpc_unsecure.so.18 grpc-1.39.0_1
+libgrpcpp_channelz.so.1.39 grpc-1.39.0_1
+libupb.so.18 grpc-1.39.0_1
 libircclient.so.1 libircclient-1.10_5
 libFAudio.so.0 FAudio-19.05_1
 libqaccessibilityclient-qt5.so.0 libqaccessibilityclient-0.4.0_1
@@ -4019,3 +4025,5 @@ libXcompshad.so.3 nx-libs-3.5.99.24_1
 libNX_X11.so.6 nx-libs-3.5.99.24_1
 librnnoise.so.0 rnnoise-0.4.1_1
 liblhasa.so.0 lhasa-0.3.1_2
+libmt32emu.so.2 libmt32emu-2.5.1_1
+libqrtr-glib.so.0 libqrtr-glib-1.0.0_1
