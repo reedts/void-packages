@@ -726,8 +726,8 @@ libasyncns.so.0 libasyncns-0.8_1
 libpulse.so.0 libpulseaudio-14.2_2
 libpulse-mainloop-glib.so.0 libpulseaudio-14.2_2
 libpulse-simple.so.0 libpulseaudio-14.2_2
-libpulsecommon-14.2.so libpulseaudio-14.2_2
-libpulsecore-14.2.so libpulseaudio-14.2_2
+libpulsecommon-15.0.so libpulseaudio-15.0_1
+libpulsecore-15.0.so libpulseaudio-15.0_1
 libprojectM.so.3 projectM-3.1.7_2
 liborc-0.4.so.0 orc-0.4.11_1
 liborc-test-0.4.so.0 orc-0.4.11_1
@@ -2428,7 +2428,7 @@ libgflags_nothreads.so.2.2 gflags-2.1.2_1
 libswmhack.so.0.0 spectrwm-2.7.2_1
 libchardet.so.1 libchardet-1.0.4_1
 libcollectdclient.so.1 libcollectdclient-5.12.0_3
-libpinktrace_0.9.so.9 pinktrace-0.9.1_1
+libpinktrace_1.0.so.100 pinktrace-1.0.0_1
 libsyd_1.0.so.0 sydbox-1.0.2_1
 libcsync.so.0 csync-0.50.0_1
 libcalligrasheetsodf.so.17 calligra-sheets-3.2.0_1
