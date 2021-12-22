@@ -1,6 +1,6 @@
 # Template file for 'python3-setuptools-rust'
 pkgname=python3-setuptools-rust
-version=1.0.0
+version=1.1.2
 revision=1
 wrksrc="${pkgname#python3-}-${version}"
 build_style=python3-module
@@ -13,7 +13,7 @@ license="MIT"
 homepage="https://github.com/PyO3/setuptools-rust"
 changelog="https://raw.githubusercontent.com/PyO3/setuptools-rust/master/CHANGELOG.md"
 distfiles="${PYPI_SITE}/s/setuptools-rust/setuptools-rust-${version}.tar.gz"
-checksum=eb6e6d41f01e63d042288e5c609684adf93426c10ea745ec324263f3fcbf27e9
+checksum=a0adb9b503c0ffc4e8fe80b7c617898cefa78049983aaaea7f747e153a3e65d1
 # Tests have unpackaged dependencies
 make_check=no
 
