@@ -1,6 +1,6 @@
 # Template file for 'synapse'
 pkgname=synapse
-version=1.49.0
+version=1.49.2
 revision=1
 build_style=python3-module
 hostmakedepends="python3-setuptools"
@@ -19,8 +19,7 @@ license="Apache-2.0"
 homepage="https://github.com/matrix-org/synapse"
 changelog="https://raw.githubusercontent.com/matrix-org/synapse/develop/CHANGES.md"
 distfiles="https://github.com/matrix-org/synapse/archive/v${version}.tar.gz"
-checksum=3c1b73eb36ec3af00868707b929f9b9d1faae9ccc4022c2c46bdb025ef0ead8e
-conf_files="/etc/synapse/homeserver.yaml /etc/synapse/log.yaml"
+checksum=f5b0017e9d77db94fac853fbefbcb4538d879cb80f404b02003930c76f5cafab
 
 system_accounts="synapse"
 synapse_homedir="/var/lib/synapse"
@@ -36,6 +35,6 @@ do_check() {
 post_install() {
 	vsv synapse
 
-	vinstall docs/sample_config.yaml 644 etc/synapse homeserver.yaml
-	vinstall docs/sample_log_config.yaml 644 etc/synapse log.yaml
+	vsconf docs/sample_config.yaml homeserver.yaml
+	vsconf docs/sample_log_config.yaml log.yaml
 }
