@@ -1,7 +1,7 @@
 # Template file for 'curl'
 pkgname=curl
-version=7.80.0
-revision=1
+version=7.81.0
+revision=2
 build_style=gnu-configure
 configure_args="ac_cv_sizeof_off_t=8 --enable-threaded-resolver --enable-ipv6
  $(vopt_with rtmp) $(vopt_with gssapi) $(vopt_enable ldap) $(vopt_with gnutls)
@@ -24,10 +24,14 @@ license="MIT"
 homepage="https://curl.haxx.se"
 changelog="https://curl.haxx.se/changes.html#${version//./_}"
 distfiles="${homepage}/download/${pkgname}-${version}.tar.bz2"
-checksum=dd0d150e49cd950aff35e16b628edf04927f0289df42883750cf952bb858189c
+checksum=1e7a38d7018ec060f1f16df839854f0889e94e122c4cfa5d3a37c2dc56f1e258
 build_options="gnutls gssapi ldap rtmp ssh ssl zstd"
 build_options_default="ssh ssl zstd"
 vopt_conflict ssl gnutls
+
+if [ "$CROSS_BUILD" ]; then
+	hostmakedepends+=" curl"
+fi
 
 pre_configure() {
 	export CFLAGS="${CFLAGS/-D_FORTIFY_SOURCE=2/}"
@@ -40,6 +44,16 @@ pre_check() {
 }
 
 post_install() {
+	if [ "$CROSS_BUILD" ]; then
+		# Copy hostmakedepends' version
+		vcompletion /usr/share/zsh/site-functions/_curl zsh
+		vcompletion /usr/share/fish/vendor_completions.d/curl.fish fish
+	else
+		make -C scripts
+		vcompletion scripts/_curl zsh
+		vcompletion scripts/curl.fish fish
+	fi
+
 	# Fix linker search paths when necessary
 	if [ -n "$XBPS_CROSS_BASE" ]; then
 		# Leave $XBPS_CROSS_BASE in --configure to reflect how it was built

@@ -1,6 +1,6 @@
 # Template file for 'bcc'
 pkgname=bcc
-version=0.23.0
+version=0.24.0
 revision=1
 wrksrc="bcc"
 build_style=cmake
@@ -13,7 +13,7 @@ maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="Apache-2.0"
 homepage="https://github.com/iovisor/bcc"
 distfiles="https://github.com/iovisor/bcc/releases/download/v${version}/bcc-src-with-submodule.tar.gz>bcc-${version}.tar.gz"
-checksum=1a8ad163756926bcc590766682caacdcfdac1b13f54976ab3f25acd5544b15ec
+checksum=4ff35d71f1dc3b6fc5626bbb7644afc9eb0953be23e873c61034c8f50c589268
 python_version="3"
 
 if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
@@ -62,9 +62,8 @@ bcc-devel_package() {
 }
 python3-bcc_package() {
 	lib32disabled=yes
-	depends="python3"
 	short_desc+=" - Python 3 module"
-	depends="${sourcepkg}>=${version}_${revision}"
+	depends="${sourcepkg}>=${version}_${revision} python3"
 	pkg_install() {
 		vmove "usr/lib/python*"
 	}

@@ -1,6 +1,6 @@
 # Template file for 'wireplumber'
 pkgname=wireplumber
-version=0.4.5
+version=0.4.7
 revision=1
 build_style=meson
 build_helper=gir
@@ -14,7 +14,7 @@ license="MIT"
 homepage="https://pipewire.pages.freedesktop.org/wireplumber"
 changelog="https://gitlab.freedesktop.org/pipewire/wireplumber/-/raw/master/NEWS.rst"
 distfiles="https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/$version/wireplumber-$version.tar.gz"
-checksum=73c76c8cd60d3f96e586122a13257586396d7e34b2f9ffad39d27015a1fa0a13
+checksum=86831102281daa11075d4e0eaebf078a601b1c63339511ec6220100d2b21f10a
 
 post_install() {
 	vlicense LICENSE
