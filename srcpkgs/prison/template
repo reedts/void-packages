@@ -1,6 +1,6 @@
 # Template file for 'prison'
 pkgname=prison
-version=5.89.0
+version=5.92.0
 revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons extra-cmake-modules qt5-tools doxygen
@@ -12,7 +12,7 @@ maintainer="John <me@johnnynator.dev>"
 license="MIT"
 homepage="https://community.kde.org/Frameworks"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/prison-${version}.tar.xz"
-checksum=64a46cc9e4447b9b98f7c53e80d9bd78a668770d285f39d7c5dd9159a4c3a349
+checksum=7e6fee9fd56be6c4589c106a3c16a28a4aa5832a24dcefe88302a9ad113ee41e
 
 post_install() {
 	vlicense LICENSES/BSD-3-Clause.txt

@@ -1,6 +1,6 @@
 # Template file for 'mtxclient'
 pkgname=mtxclient
-version=0.6.1
+version=0.7.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_LIB_TESTS=OFF -DBUILD_LIB_EXAMPLES=OFF"
@@ -10,8 +10,9 @@ short_desc="Client API library for the Matrix protocol"
 maintainer="Lorem <notloremipsum@protonmail.com>"
 license="MIT"
 homepage="https://github.com/Nheko-Reborn/mtxclient"
+changelog="https://raw.githubusercontent.com/Nheko-Reborn/mtxclient/master/CHANGELOG.md"
 distfiles="https://github.com/Nheko-Reborn/mtxclient/archive/v${version}.tar.gz"
-checksum=d0c3d86898ade0a0680f57cb920e11f07901085403ebaaa0b085e0067a78529c
+checksum=dd8ad5725c391b7c5b18564074e50bfc667fb3047e681561e5e42aec99c25b12
 
 post_install() {
 	vlicense LICENSE

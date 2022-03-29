@@ -1,6 +1,6 @@
 # Template file for 'kdbusaddons'
 pkgname=kdbusaddons
-version=5.89.0
+version=5.92.0
 revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons extra-cmake-modules qt5-host-tools qt5-tools-devel"
@@ -11,7 +11,7 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdbusaddons"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=f0cb05178c793d6b9fd6f9a20342083a67312e493970d695914c6a1e40ef05fa
+checksum=7c03f33cc49ffa80e509f654f410cb142e917bceb2f35f08836dc46ed268ae54
 
 do_check() {
 	cd build

@@ -529,6 +529,7 @@ Example:
   | UBUNTU_SITE      | http://archive.ubuntu.com/ubuntu/pool           |
   | XORG_SITE        | https://www.x.org/releases/individual            |
   | KDE_SITE         | https://download.kde.org/stable                 |
+  | VIDEOLAN_SITE    | https://download.videolan.org/pub/videolan      |
 
 - `checksum` The `sha256` digests matching `${distfiles}`. Multiple files can be
 separated by blanks. Please note that the order must be the same than
@@ -604,7 +605,9 @@ patches to the package sources during `do_patch()`. Patches are stored in
 `srcpkgs/<pkgname>/patches` and must be in `-p1` format. By default set to `-Np1`.
 
 - `disable_parallel_build` If set the package won't be built in parallel
-and `XBPS_MAKEJOBS` has no effect.
+and `XBPS_MAKEJOBS` will be set to 1. If a package does not work well with `XBPS_MAKEJOBS`
+but still has a mechanism to build in parallel, set `disable_parallel_build` and
+use `XBPS_ORIG_MAKEJOBS` (which holds the original value of `XBPS_MAKEJOBS`) in the template.
 
 - `make_check` Sets the cases in which the `check` phase is run.
 This option has to be accompanied by a comment explaining why the tests fail.

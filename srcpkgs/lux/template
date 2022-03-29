@@ -1,6 +1,6 @@
 # Template file for 'lux'
 pkgname=lux
-version=0.12.0
+version=0.14.0
 revision=1
 build_style=go
 go_import_path=github.com/iawia002/lux
@@ -10,7 +10,7 @@ maintainer="Benjamín Albiñana <benalb@gmail.com>"
 license="MIT"
 homepage="https://github.com/iawia002/lux"
 distfiles="https://github.com/iawia002/lux/archive/v${version}.tar.gz"
-checksum=f5bcbe1039219a299908fdd5a540052ef603ff5c8c21c0d64f44c53132c41cdd
+checksum=3d485c9703851f3fb5cdee9b029b5b6855f84bfd29b44cae310a031a6fa8c00f
 
 post_install() {
 	vlicense LICENSE

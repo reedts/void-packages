@@ -1,6 +1,6 @@
 # Template file for 'intellij-idea-ultimate-edition'
 pkgname=intellij-idea-ultimate-edition
-version=2021.3
+version=2021.3.3
 revision=1
 archs="i686 x86_64"
 create_wrksrc="true"
@@ -11,7 +11,7 @@ license="custom:Commercial"
 homepage="https://www.jetbrains.com/idea"
 _filename="ideaIU-${version}-no-jbr.tar.gz"
 distfiles="https://download.jetbrains.com/idea/${_filename}"
-checksum=0b46ebb2381bd587bbec9d15ff78f11380bcf2654c0716c0caf747550ee73c66
+checksum=2a3295fca08060ad515f6c7198879d09963724cfb36af3ea94f16dcd76636470
 repository=nonfree
 restricted=yes
 nopie=yes

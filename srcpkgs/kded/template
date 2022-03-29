@@ -1,6 +1,6 @@
 # Template file for 'kded'
 pkgname=kded
-version=5.89.0
+version=5.92.0
 revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons extra-cmake-modules"
@@ -10,7 +10,7 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kded"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=d42d189098c30b7fdf0fcd5f37153d4671b121a450ccd38e449d7e60d67923e7
+checksum=8335531b856cb361ab2e5b390b333eb3405bac4e2bc7c0305994704bd0540e6c
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" qt5-host-tools qt5-qmake kdoctools"
