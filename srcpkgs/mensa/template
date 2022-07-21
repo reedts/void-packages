@@ -1,0 +1,16 @@
+# Template file for 'mensa'
+pkgname=mensa
+version=2d79250
+revision=1
+wrksrc="mensa"
+depends="python3 python3-requests python3-BeautifulSoup4"
+short_desc="Mensa menu fetch and "
+maintainer="reedts <j.reedts@gmail.com>"
+license="MIT"
+homepage="https://git.rcx.one/eike/mensa"
+distfiles="https://git.rcx.one/eike/mensa/archive/${version}.tar.gz"
+checksum=e491adca53f6ccf81874329528aca25a2bee399e481b61f2b745a5c8948d2e46
+
+do_install() {
+	vbin menu.py mensa
+}
