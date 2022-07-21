@@ -1,6 +1,6 @@
 # Template file for 'dasel'
 pkgname=dasel
-version=1.24.3
+version=1.26.0
 revision=1
 build_style=go
 go_import_path=github.com/tomwright/dasel
@@ -12,7 +12,7 @@ license="MIT"
 homepage="https://daseldocs.tomwright.me/"
 changelog="https://raw.githubusercontent.com/TomWright/dasel/master/CHANGELOG.md"
 distfiles="https://github.com/TomWright/dasel/archive/v${version}.tar.gz"
-checksum=86d497e7dcfe63901ef0aeddb31e3989959d60d785a04f98fc6a88b6f497980a
+checksum=3c28ffd0ce63884835ce10392591624014c4d0af4444d9230a9027385559f898
 
 post_install() {
 	vlicense LICENSE

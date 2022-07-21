@@ -464,7 +464,7 @@ the generated `binary packages` have been modified.
 - `short_desc` A string with a brief description for this package. Max 72 chars.
 
 - `version` A string with the package version. Must not contain dashes or underscore
-and at least one digit is required. Shell's variable substition usage is not allowed.
+and at least one digit is required. Shell's variable substitution usage is not allowed.
 
 Neither `pkgname` or `version` should contain special characters which make it
 necessary to quote them, so they shouldn't be quoted in the template.
@@ -613,6 +613,11 @@ and `XBPS_MAKEJOBS` will be set to 1. If a package does not work well with `XBPS
 but still has a mechanism to build in parallel, set `disable_parallel_build` and
 use `XBPS_ORIG_MAKEJOBS` (which holds the original value of `XBPS_MAKEJOBS`) in the template.
 
+- `disable_parallel_check` If set tests for the package won't be built and run in parallel
+and `XBPS_MAKEJOBS` will be set to 1. If a package does not work well with `XBPS_MAKEJOBS`
+but still has a mechanism to run checks in parallel, set `disable_parallel_check` and
+use `XBPS_ORIG_MAKEJOBS` (which holds the original value of `XBPS_MAKEJOBS`) in the template.
+
 - `make_check` Sets the cases in which the `check` phase is run.
 This option has to be accompanied by a comment explaining why the tests fail.
 Allowed values:
@@ -657,7 +662,7 @@ debugging symbols. Files can be given by full path or by filename.
 - `noshlibprovides` If set, the ELF binaries won't be inspected to collect the provided
 sonames in shared libraries.
 
-- `noverifyrdeps` If set, the ELF binaries and shared libaries won't be inspected to collect
+- `noverifyrdeps` If set, the ELF binaries and shared libraries won't be inspected to collect
 their reverse dependencies. You need to specify all dependencies in the `depends` when you
 need to set this.
 
@@ -697,7 +702,7 @@ This appends to the generated file rather than replacing it.
 - `nopie` Only needs to be set to something to make active, disables building the package with hardening
   features (PIE, relro, etc). Not necessary for most packages.
 
-- `nopie_files` White-space seperated list of ELF binaries that won't be checked
+- `nopie_files` White-space separated list of ELF binaries that won't be checked
 for PIE. Files must be given by full path.
 
 - `reverts` xbps supports a unique feature which allows to downgrade from broken
@@ -783,7 +788,7 @@ A special value `noarch` used to be available, but has since been removed.
 So far, we have listed four types of `depends` variables: `hostmakedepends`,
 `makedepends`, `checkdepends` and `depends`. These different kinds of variables
 are necessary because `xbps-src` supports cross compilation and to avoid
-installing unecessary packages in the build environment.
+installing unnecessary packages in the build environment.
 
 During a build process, there are programs that must be _run_ on the host, such
 as `yacc` or the C compiler. The packages that contain these programs should be
@@ -1128,9 +1133,9 @@ Current working directory for functions is set as follows:
 
 - For do_fetch, post_fetch: `XBPS_BUILDDIR`.
 
-- For do_extract, post_extract: `wrksrc`.
+- For do_extract through do_patch: `wrksrc`.
 
-- For pre_patch through post_install: `build_wrksrc`
+- For post_patch through post_install: `build_wrksrc`
 if it is defined, otherwise `wrksrc`.
 
 <a id="build_options"></a>
