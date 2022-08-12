@@ -1415,6 +1415,14 @@ If the service requires directories in parts of the system that are not generall
 temporary filesystems. Then use the `make_dirs` variable in the template to create
 those directories when the package is installed.
 
+If the package installs a systemd service file or other unit, leave it in place as a
+reference point so long as including it has no negative side effects.
+
+Examples of when *not* to install systemd units:
+
+1. When doing so changes runtime behavior of the packaged software.
+2. When it is done via a compile time flag that also changes build dependencies.
+
 <a id="32bit_pkgs"></a>
 ### 32bit packages
 
@@ -1594,11 +1602,10 @@ recursively by the target python version. This differs from `pycompile_module` i
 path may be specified, Example: `pycompile_dirs="usr/share/foo"`.
 
 - `python_version`: this variable expects the supported Python major version.
-By default it's set to `2`. This variable is needed for multi-language
+In most cases version is inferred from shebang, install path or build style.
+Only required for some multi-language
 applications (e.g., the application is written in C while the command is
 written in Python) or just single Python file ones that live in `/usr/bin`.
-
-> NOTE: you need to define it *only* for non-Python modules.
 
 Also, a set of useful variables are defined to use in the templates:
 
@@ -1637,6 +1644,7 @@ The following template variables influence how Go packages are built:
   any go.mod files, `default` to use Go's default behavior, or anything
   accepted by `go build -mod MODE`.  Defaults to `vendor` if there's
   a vendor directory, otherwise `default`.
+- `go_ldflags`: Arguments to pass to the linking steps of go tool.
 
 The following environment variables influence how Go packages are built:
 
