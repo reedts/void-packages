@@ -1,0 +1,28 @@
+# Template file for 'squashfuse'
+pkgname=squashfuse
+version=0.1.105
+revision=1
+build_style=gnu-configure
+#configure_args=""
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+hostmakedepends="autoconf automake libtool pkg-config"
+makedepends="fuse-devel zlib-devel"
+short_desc="FUSE filesystem to mount squashfs archives"
+maintainer="reedts <j.reedts@gmail.com>"
+license="custom:"
+homepage="https://github.com/vasi/squashfuse"
+#changelog=""
+distfiles="https://github.com/vasi/squashfuse/archive/refs/tags/${version}.tar.gz"
+checksum=3f776892ab2044ecca417be348e482fee2839db75e35d165b53737cb8153ab1e
+
+pre_configure() {
+	# fix wrong version string
+	vsed -i ./configure.ac -e 's/0.1.104/0.1.105/'
+	./autogen.sh
+}
+
+post_install() {
+	vlicense LICENSE
+}
