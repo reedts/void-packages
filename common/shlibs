@@ -62,7 +62,7 @@ liblto_plugin.so.0 gcc-4.7.3_1
 libgcc_s.so.1 libgcc-4.4.0_1
 libgo.so.16 libgo-10.2.0_1
 libgccjit.so.0 libgccjit-10.2.1pre1_1
-libperl.so.5.34 perl-5.34.0_1
+libperl.so.5.36 perl-5.36.0_1
 libgmp.so.10 gmp-5.0.1_1
 libgmpxx.so.4 gmpxx-6.0.0_2
 libmpfi.so.0 mpfi-1.5.3_1
@@ -87,11 +87,11 @@ libmagic.so.1 libmagic-5.12_1
 libbluetooth.so.3 libbluetooth-4.58_1
 libwmf-0.2.so.7 libwmf-0.2.8.4_1
 libwmflite-0.2.so.7 libwmf-0.2.8.4_1
-libgthread-2.0.so.0 glib-2.72.0_1
-libglib-2.0.so.0 glib-2.72.0_1
-libgmodule-2.0.so.0 glib-2.72.0_1
-libgio-2.0.so.0 glib-2.72.0_1
-libgobject-2.0.so.0 glib-2.72.0_1
+libgthread-2.0.so.0 glib-2.74.0_1
+libglib-2.0.so.0 glib-2.74.0_1
+libgmodule-2.0.so.0 glib-2.74.0_1
+libgio-2.0.so.0 glib-2.74.0_1
+libgobject-2.0.so.0 glib-2.74.0_1
 libatk-1.0.so.0 atk-1.26.0_1
 libpangocairo-1.0.so.0 pango-1.24.0_1
 libpangoft2-1.0.so.0 pango-1.24.0_1
@@ -823,6 +823,7 @@ libXevie.so.1 libXevie-1.0.2_1
 libatspi.so.0 at-spi2-core-1.91.91_1
 libatk-bridge-2.0.so.0 at-spi2-atk-2.6.0_1
 libvte-2.91.so.0 vte3-0.68.0_1
+libvte-2.91-gtk4.so.0 vte3-gtk4-0.70.0_1
 libpipeline.so.1 libpipeline-1.2.0_1
 libosp.so.5 opensp-1.5.2_1
 libogrove.so.0 openjade-1.3.2_1
@@ -2482,7 +2483,7 @@ libi3ipc-glib-1.0.so.0 i3ipc-glib-0.6.0_1
 libcsound64.so.6.0 csound-6.05.0_1
 libcsnd6.so.6.0 csound-6.05.0_1
 libfko.so.3 libfko-2.6.9_1
-libvterm.so.0 libvterm-0.0.20151005_1
+libvterm.so.0 libvterm-0.3_1
 libboinc_opencl.so.7 boinc-7.16.16_2
 libboinc_api.so.7 boinc-7.16.16_2
 libboinc_graphics2.so.7 boinc-7.16.16_2
@@ -2598,7 +2599,7 @@ libhwloc.so.15 libhwloc-2.0.4_1
 libnetfilter_cttimeout.so.1 libnetfilter_cttimeout-1.0.0_1
 libnetfilter_cthelper.so.0 libnetfilter_cthelper-1.0.0_1
 libnetfilter_queue.so.1 libnetfilter_queue-1.0.2_1
-libfilezilla.so.29 libfilezilla-0.38.1_1
+libfilezilla.so.31 libfilezilla-0.39.1_1
 libtommath.so.1 libtommath-1.0_1
 libKF5ItemViews.so.5 kitemviews-5.26.0_1
 libunicorn.so.1 unicorn-1.0_1
@@ -2654,7 +2655,7 @@ libcmark.so.0 cmark-0.24.1_1
 libspotify.so.12 libspotify-12.1.51_1
 libvidstab.so.1.1 libvidstab-1.1.0_1
 libxdo.so.3 xdotool-3.20150503.1_1
-libabigail.so.0 libabigail-1.0.rc3_1
+libabigail.so.1 libabigail-2.1_1
 libgnome-games-support-1.so.3 libgnome-games-support-1.4.0_1
 libKDevCMakeCommon.so.36 kdevelop-22.04.1_1
 libKDevClangPrivate.so.36 kdevelop-22.04.1_1
@@ -2673,8 +2674,8 @@ libKDevPlatformUtil.so.58 kdevelop-22.04.1_1
 libKDevPlatformVcs.so.58 kdevelop-22.04.1_1
 libts.so.0 tslib-1.6_1
 libobs.so.0 obs-0.14.1_2
-libobsglad.so.0 obs-0.14.1_2
-libobs-opengl.so.0 obs-0.14.1_2
+libobsglad.so.1 obs-28.0.1_1
+libobs-opengl.so.1 obs-28.0.1_1
 libobs-frontend-api.so.0 obs-20.1.3_1
 libzimg.so.2 zimg-2.0.4_1
 libvapoursynth.so vapoursynth-R32_2
@@ -4162,3 +4163,4 @@ libgbinder.so.1 libgbinder-1.1.20_1
 libsunpinyin.so.3 libsunpinyin-3.0.0rc2_1
 libtpm2-totp.so.0 libtpm2-totp-0.3.0_1
 libmujs.so.1.2.0 mujs-1.2.0_2
+libiir.so.1 libiir1-1.9.3_1
