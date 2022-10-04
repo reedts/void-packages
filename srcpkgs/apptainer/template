@@ -5,14 +5,15 @@ revision=1
 build_style=go
 go_import_path=github.com/apptainer/apptainer
 hostmakedepends="git pkg-config cryptsetup"
-makedepends="openssl-devel"
-depends="fakeroot fuse-overlayfs squashfs-tools"
+makedepends="openssl-devel libseccomp-devel"
+depends="fakeroot fuse-overlayfs squashfs-tools squashfuse"
 short_desc="Open source container platform"
 maintainer="reedts <j.reedts@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/apptainer/apptainer"
 distfiles="https://github.com/apptainer/apptainer/releases/download/v${version}/${pkgname}-${version}.tar.gz"
 checksum=1772f25c8770f976abb82c29053b77183930426a83eb3e43b9f8068c3e88ac30
+make_dirs="/var/lib/apptainer/mnt/session 755 root root"
 
 do_build() {
 	./mconfig \
