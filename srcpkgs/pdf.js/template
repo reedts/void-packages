@@ -1,14 +1,14 @@
 # Template file for 'pdf.js'
 pkgname=pdf.js
 version=2.16.105
-revision=1
+revision=2
 create_wrksrc=yes
 short_desc="Portable Document Format (PDF) viewer built with HTML5"
 maintainer="Daniel Santana <daniel@santana.tech>"
 license="Apache-2.0"
 homepage="https://mozilla.github.io/pdf.js/"
-distfiles="https://github.com/mozilla/pdf.js/releases/download/v${version}/pdfjs-${version}-dist.zip"
-checksum=47abfa0dd7574333e801c1dc159340e0d22956edcd6d7293ed5fee54f0e07e0b
+distfiles="https://github.com/mozilla/pdf.js/releases/download/v${version}/pdfjs-${version}-legacy-dist.zip"
+checksum=4fce357e8c665a25d44498f466ad93829f672f782eb95d6db8f20ee479dd6af4
 
 do_install() {
 	vmkdir usr/share/$pkgname/
