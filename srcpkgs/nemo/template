@@ -1,6 +1,6 @@
 # Template file for 'nemo'
 pkgname=nemo
-version=5.6.0
+version=5.6.2
 revision=1
 build_style=meson
 build_helper=gir
@@ -15,7 +15,7 @@ license="GPL-2.0-or-later, LGPL-2.0-or-later"
 homepage="https://github.com/linuxmint/nemo"
 changelog="https://raw.githubusercontent.com/linuxmint/nemo/master/debian/changelog"
 distfiles="https://github.com/linuxmint/nemo/archive/${version}.tar.gz"
-checksum=1a5084ef175d1d39a5ae9374444cdc5778dec6f9fa3789383f848b1bd31abd9d
+checksum=c24f8ce218e54f12583c374fc1f476c7e0eea07df9dbcbb562f3597580d05543
 python_version=3
 # Requires xvfb-run and dbus-run-session
 make_check=no # can't be run inside chroot due to fusermount3
