@@ -1,6 +1,6 @@
 # Template file for 'vale'
 pkgname=vale
-version=2.21.3
+version=2.23.0
 revision=1
 build_style=go
 go_import_path="github.com/errata-ai/vale/v2"
@@ -10,8 +10,8 @@ short_desc="Natural language linter"
 maintainer="SolitudeSF <solitudesf@protonmail.com>"
 license="MIT"
 homepage="https://vale.sh"
-distfiles="https://github.com/errata-ai/vale/archive/v${version}.tar.gz"
-checksum=09a64bff873134d794888615af3131a441d6b3763bdcb76d45162587386026df
+distfiles="https://github.com/errata-ai/vale/archive/refs/tags/v${version}.tar.gz"
+checksum=bc759982d639fda1aa985d3ed19085210298dafbf8ff121b1d3f5883459af12e
 
 post_install() {
 	vlicense LICENSE
