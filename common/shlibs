@@ -91,11 +91,11 @@ libmagic.so.1 libmagic-5.12_1
 libbluetooth.so.3 libbluetooth-4.58_1
 libwmf-0.2.so.7 libwmf-0.2.8.4_1
 libwmflite-0.2.so.7 libwmf-0.2.8.4_1
-libgthread-2.0.so.0 glib-2.74.0_1
-libglib-2.0.so.0 glib-2.74.0_1
-libgmodule-2.0.so.0 glib-2.74.0_1
-libgio-2.0.so.0 glib-2.74.0_1
-libgobject-2.0.so.0 glib-2.74.0_1
+libgthread-2.0.so.0 glib-2.76.0_1
+libglib-2.0.so.0 glib-2.76.0_1
+libgmodule-2.0.so.0 glib-2.76.0_1
+libgio-2.0.so.0 glib-2.76.0_1
+libgobject-2.0.so.0 glib-2.76.0_1
 libatk-1.0.so.0 atk-1.26.0_1
 libpangocairo-1.0.so.0 pango-1.24.0_1
 libpangoft2-1.0.so.0 pango-1.24.0_1
@@ -1171,6 +1171,7 @@ libharfbuzz.so.0 libharfbuzz-5.1.0_1
 libharfbuzz-icu.so.0 libharfbuzz-5.1.0_1
 libharfbuzz-subset.so.0 libharfbuzz-5.1.0_1
 libharfbuzz-gobject.so.0 libharfbuzz-5.1.0_1
+libharfbuzz-cairo.so.0 libharfbuzz-7.1.0_1
 libosinfo-1.0.so.0 libosinfo-0.10.0_2
 libspice-client-gtk-3.0.so.5 spice-gtk-0.41_2
 libspice-client-glib-2.0.so.8 spice-gtk-0.41_2
@@ -2672,7 +2673,6 @@ libc++abi.so.1 libcxxabi-3.8.0_1
 libfastjson.so.4 libfastjson-0.99.3_1
 libdcadec.so.0 dcadec-0.2.0_1
 libcmark.so.0 cmark-0.24.1_1
-libspotify.so.12 libspotify-12.1.51_1
 libvidstab.so.1.1 libvidstab-1.1.0_1
 libxdo.so.3 xdotool-3.20150503.1_1
 libabigail.so.1 libabigail-2.1_1
