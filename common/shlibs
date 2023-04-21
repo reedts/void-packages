@@ -317,8 +317,8 @@ libxcb-property.so.1 xcb-util-0.3.4_1
 libxcb-atom.so.1 xcb-util-0.3.4_1
 libxcb-event.so.1 xcb-util-0.3.4_1
 libxcb-util.so.1 xcb-util-0.3.9_1
-libtiff.so.5 tiff-4.0.0_1
-libtiffxx.so.5 tiff-4.0.0_1
+libtiff.so.6 tiff-4.5.0_1
+libtiffxx.so.6 tiff-4.5.0_1
 libnotify.so.4 libnotify-0.7_1
 libexo-1.so.0 exo-0.7.3_1
 libexo-2.so.0 exo-0.12.0_1
@@ -1729,7 +1729,7 @@ libLinearMath.so.3.17 bullet-3.17_1
 libBulletSoftBody.so.3.17 bullet-3.17_1
 libBullet3Common.so.3.17 bullet-3.17_1
 libinotifytools.so.0 libinotify-tools-3.14_2
-libfswatch.so.11 libfswatch-1.13.0_1
+libfswatch.so.13 libfswatch-1.17.1_1
 libopensc.so.8 libopensc-0.22.0_1
 libSDL2_ttf-2.0.so.0 SDL2_ttf-2.0.12_1
 librtlsdr.so.0 librtlsdr-0.5.3_1
@@ -1745,6 +1745,7 @@ libxmlsec1-gcrypt.so.1 xmlsec1-1.2.31_2
 libxmlsec1-gnutls.so.1 xmlsec1-1.2.31_2
 libefivar.so.1 libefivar-31_1
 libefiboot.so.1 libefivar-31_1
+libefisec.so.1 libefivar-38_1
 libportaudio.so.2 portaudio-19.20140130_1
 libportaudiocpp.so.0 portaudio-cpp-19.20140130_1
 libdar.so.6000 libdar-2.6.6_1
@@ -2248,8 +2249,8 @@ libgom-1.0.so.0 gom-0.3.0_1
 libetpan.so.20 libetpan-1.9.3_4
 libxmp.so.4 libxmp-4.3.7_1
 libKF5ThreadWeaver.so.5 threadweaver-5.26.0_1
-libOpenImageIO_Util.so.2.3 openimageio-2.3.18.0_1
-libOpenImageIO.so.2.3 openimageio-2.3.18.0_1
+libOpenImageIO_Util.so.2.4 openimageio-2.4.9.0_1
+libOpenImageIO.so.2.4 openimageio-2.4.9.0_1
 libOpenColorIO.so.2.1 opencolorio-2.1.2_1
 libpystring.so.1 pystring-1.1.3_1
 libyaml-cpp.so.0.7 yaml-cpp-0.7.0_1
@@ -4233,7 +4234,7 @@ libdspy-1.so.1 d-spy-1.4.0_1
 libpanel-1.so.1 libpanel-1.0.1_1
 libqrtr.so.1 qrtr-ns-1.0_1
 libbpf.so.1 libbpf-1.0.0_1
-libImath-3_1.so.29 imath-3.1.5_1
+libImath-3_1.so.30 imath-3.1.7_1
 libIex-3_1.so.30 libopenexr-3.1.5_1
 libIlmThread-3_1.so.30 libopenexr-3.1.5_1
 libOpenEXR-3_1.so.30 libopenexr-3.1.5_1
