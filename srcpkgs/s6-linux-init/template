@@ -2,18 +2,13 @@
 pkgname=s6-linux-init
 version=1.1.1.0
 revision=1
-#archs="i686 x86_64"
-#build_wrksrc=
 build_style=configure
-configure_args="--bindir=/usr/bin"
-#make_build_args=""
-#make_install_args=""
-#conf_files=""
-#make_dirs="/var/log/dir 0755 root root"
-hostmakedepends=""
+build_helper=qemu
+configure_args="--prefix=/usr --bindir=/usr/bin --skeldir=/etc/s6-init/skel --enable-shared --disable-static"
+conf_files="/etc/s6-init/skel/rc.init /etc/s6-init/skel/rc.shutdown /etc/s6-init/skel/rc.shutdown.final /etc/s6-init/skel/runlevel"
 makedepends="execline-devel skalibs-devel s6-devel"
 depends="skalibs"
-short_desc="s6 init program"
+short_desc="S6 init program"
 maintainer="reedts <j.reedts@gmail.com>"
 license="ISC"
 homepage="https://skarnet.org/software/s6-linux-init"
@@ -21,5 +16,6 @@ distfiles="https://skarnet.org/software/${pkgname}/${pkgname}-${version}.tar.gz"
 checksum=ad483f35326579007e5a7e3cb9f1fd1177eaf71ec5c11c47cd784a042956a8ee
 
 post_install() {
+
 	vlicense COPYING
 }
