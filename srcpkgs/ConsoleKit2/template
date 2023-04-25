@@ -1,0 +1,29 @@
+# Template file for 'ConsoleKit2'
+pkgname=ConsoleKit2
+version=1.2.5
+revision=1
+#archs="i686 x86_64"
+#build_wrksrc=
+build_style=configure
+configure_args="--prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-pam-module --with-pam-module-dir=/usr/lib/security --disable-static"
+#make_build_args=""
+#make_install_args=""
+#conf_files=""
+#make_dirs="/var/log/dir 0755 root root"
+hostmakedepends="autoconf automake libtool pkg-config"
+makedepends="gettext-devel-tools glib-devel pam-devel polkit-devel xorg-server-devel"
+short_desc="Framework for defining and tracking login sessions"
+maintainer="reedts <j.reedts@gmail.com>"
+license="GPL-2.0-only"
+homepage="https://github.com/ConsoleKit2/ConsoleKit2"
+distfiles="https://github.com/ConsoleKit2/ConsoleKit2/archive/refs/tags/${version}.tar.gz"
+checksum=d82eeab0c830acdb720e910b5b7bf59db0d3eb922c4390f15cf19bb035742caa
+
+pre_configure() {
+	./autogen.sh
+}
+
+post_install() {
+	mv ${DESTDIR}/usr/sbin/* ${DESTDIR}/usr/bin
+	rmdir ${DESTDIR}/usr/sbin
+}
