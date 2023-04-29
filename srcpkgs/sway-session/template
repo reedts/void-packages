@@ -1,0 +1,12 @@
+# Template file for 'sway-session'
+pkgname=sway-session
+version=0.0.1
+revision=1
+short_desc="Sway session script for nvidia users"
+maintainer="reedts <j.reedts@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/reedts/void-packages"
+
+do_install() {
+	vbin ${FILESDIR}/sway-session
+}
