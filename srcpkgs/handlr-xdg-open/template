@@ -1,0 +1,14 @@
+# Template file for 'handlr-xdg-open'
+pkgname=handlr-xdg-open
+version=0.0.1
+revision=1
+depends="handlr"
+short_desc="Wrapper script using handlr instead of xdg-open"
+maintainer="reedts <j.reedts@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/reedts/void-packages"
+conflicts="xdg-open"
+
+do_install() {
+	vbin ${FILESDIR}/xdg-open
+}
