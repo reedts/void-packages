@@ -5,13 +5,13 @@ revision=1
 build_style=meson
 build_helper=gir
 configure_args="$(vopt_bool gir introspection) -Dman=true
- -Dsession_tracking=libelogind -Dsystemdsystemunitdir=/usr/lib/systemd/user"
+ -Dsession_tracking=$(vopt_if consolekit ConsoleKit libelogind) -Dsystemdsystemunitdir=/usr/lib/systemd/user"
 make_dirs="
  /etc/polkit-1/rules.d 0700 polkitd polkitd
  /usr/share/polkit-1/rules.d 0700 polkitd polkitd"
 hostmakedepends="pkg-config gettext glib-devel perl
  libxslt docbook-xsl"
-makedepends="libglib-devel elogind-devel duktape-devel pam-devel"
+makedepends="libglib-devel $(vopt_if consolekit '' elogind-devel) duktape-devel pam-devel"
 checkdepends="python3-dbus python3-dbusmock"
 short_desc="Authorization Toolkit"
 maintainer="Enno Boland <gottox@voidlinux.org>"
@@ -25,8 +25,10 @@ system_accounts="polkitd"
 #provides="polkit-elogind-${version}_${revision}"
 
 # Package build options
-build_options="gir"
+build_options="gir consolekit"
 build_options_default="gir"
+
+desc_option_consolekit="Use ConsoleKit2 for session tracking"
 
 if [ "$XBPS_TARGET_LIBC" = "musl" ]; then
 	# see https://gitlab.freedesktop.org/polkit/polkit/-/issues/134
