@@ -6,10 +6,10 @@ revision=1
 #build_wrksrc=
 build_style=configure
 configure_args="--prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-pam-module --with-pam-module-dir=/usr/lib/security --disable-static"
-#make_build_args=""
-#make_install_args=""
-#conf_files=""
-#make_dirs="/var/log/dir 0755 root root"
+make_dirs="
+	/etc/ConsoleKit/run-seat.d 0755 root root
+	/usr/lib/ConsoleKit/run-seat.d 0755 root root
+"
 hostmakedepends="autoconf automake libtool pkg-config"
 makedepends="gettext-devel-tools glib-devel pam-devel polkit-devel xorg-server-devel"
 short_desc="Framework for defining and tracking login sessions"
@@ -26,4 +26,6 @@ pre_configure() {
 post_install() {
 	mv ${DESTDIR}/usr/sbin/* ${DESTDIR}/usr/bin
 	rmdir ${DESTDIR}/usr/sbin
+
+	vsv ConsoleKit2
 }
