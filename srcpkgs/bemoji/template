@@ -1,0 +1,15 @@
+# Template file for 'bemoji'
+pkgname=bemoji
+version=0.3.0
+revision=1
+short_desc="Emoji picker with support for bemenu/wofi/rofi/dmenu and wayland/X11"
+maintainer="reedts <j.reedts@gmail.com>"
+license="MIT"
+homepage="https://github.com/marty-oehme/bemoji"
+distfiles="https://github.com/marty-oehme/bemoji/archive/refs/tags/${version}.tar.gz"
+checksum=8a61b267ad79340da62c0826ca6cd12f6fccc2ccefb78bdbb6a6cbadd8cd3169
+
+do_install() {
+	vbin bemoji
+	vlicense LICENSE
+}
