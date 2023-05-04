@@ -1,14 +1,14 @@
 # Template file for 'ConsoleKit2'
 pkgname=ConsoleKit2
 version=1.2.5
-revision=1
-#archs="i686 x86_64"
-#build_wrksrc=
+revision=2
 build_style=configure
 configure_args="--prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-pam-module --with-pam-module-dir=/usr/lib/security --disable-static"
 make_dirs="
 	/etc/ConsoleKit/run-seat.d 0755 root root
+	/etc/ConsoleKit/run-session.d 0755 root root
 	/usr/lib/ConsoleKit/run-seat.d 0755 root root
+	/usr/lib/ConsoleKit/run-session.d 0755 root root
 "
 hostmakedepends="autoconf automake libtool pkg-config"
 makedepends="gettext-devel-tools glib-devel pam-devel polkit-devel xorg-server-devel"
@@ -26,6 +26,8 @@ pre_configure() {
 post_install() {
 	mv ${DESTDIR}/usr/sbin/* ${DESTDIR}/usr/bin
 	rmdir ${DESTDIR}/usr/sbin
+
+	vinstall ${FILESDIR}/pam-foreground-compat.ck 755 usr/lib/ConsoleKit/run-session.d/
 
 	vsv ConsoleKit2
 }
