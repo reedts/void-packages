@@ -1,6 +1,6 @@
 # Template file for 'tectonic'
 pkgname=tectonic
-version=0.13.1
+version=0.14.1
 revision=1
 build_style=cargo
 configure_args="--features=external-harfbuzz"
@@ -12,7 +12,7 @@ license="MIT"
 homepage="https://tectonic-typesetting.github.io"
 changelog="https://raw.githubusercontent.com/tectonic-typesetting/tectonic/release/CHANGELOG.md"
 distfiles="https://github.com/tectonic-typesetting/tectonic/archive/tectonic@${version}.tar.gz"
-checksum=bc16c2d7c85b646f5d168371a6cf1f2c219d8fcdcc919addcc9d74ce0cfbd442
+checksum=3703a4fc768b3c7be6a4560857b17b2671f19023faee414aa7b6befd24ec9d25
 
 post_install() {
 	vlicense LICENSE

@@ -240,7 +240,6 @@ libdevmapper-event-lvm2.so.2.02 device-mapper-2.02.110_1
 liblvm2cmd.so.2.02 device-mapper-2.02.54_1
 libprop.so.0 proplib-0.1_1
 libfontenc.so.1 libfontenc-1.0.4_1
-libXfont.so.1 libXfont-1.4.0_1
 libx86.so.1 libx86-1.1_1
 libxcb-render.so.0 libxcb-1.2_1
 libxcb-glx.so.0 libxcb-1.2_1
@@ -301,9 +300,7 @@ libXaw7.so.7 libXaw-1.0.5_1
 libXft.so.2 libXft-2.1.13_1
 libXcursor.so.1 libXcursor-1.1.9_1
 libXxf86dga.so.1 libXxf86dga-1.0.2_1
-libXxf86misc.so.1 libXxf86misc-1.0.1_1
 libXp.so.6 libXp-1.0.0_1
-libXfontcache.so.1 libXfontcache-1.0.4_1
 libXv.so.1 libXv-1.0.4_1
 libXvMC.so.1 libXvMC-1.0.4_1
 libXvMCW.so.1 libXvMC-1.0.4_1
@@ -836,7 +833,6 @@ libchamplain-gtk-0.12.so.0 libchamplain-0.12.5_2
 libshumate-1.0.so.1 libshumate-1.0.0_1
 libvpx.so.6 libvpx6-1.8.0_1
 libvpx.so.7 libvpx7-1.11.0_1
-libXevie.so.1 libXevie-1.0.2_1
 libatspi.so.0 at-spi2-core-1.91.91_1
 libatk-bridge-2.0.so.0 at-spi2-atk-2.6.0_1
 libvte-2.91.so.0 vte3-0.68.0_1
@@ -2991,10 +2987,10 @@ libdecoration.so.0 compiz-core-0.8.14_1
 libcompizconfig.so.0 libcompizconfig-0.8.14_1
 libemeraldengine.so.0 emerald-0.8.14_1
 libhangul.so.1 libhangul-0.1.0_1
-libmutter-11.so.0 mutter-43.2_1
-libmutter-clutter-11.so.0 mutter-43.2_1
-libmutter-cogl-11.so.0 mutter-43.2_1
-libmutter-cogl-pango-11.so.0 mutter-43.2_1
+libmutter-12.so.0 mutter-44.0_1
+libmutter-clutter-12.so.0 mutter-44.0_1
+libmutter-cogl-12.so.0 mutter-44.0_1
+libmutter-cogl-pango-12.so.0 mutter-44.0_1
 libgeoclue-2.so.0 geoclue2-2.4.4_1
 libgepub-0.6.so.0 libgepub-0.6.0_4
 libslopy.so.7.6 slop-7.6_1
@@ -4276,3 +4272,6 @@ libplayerctl.so.2 playerctl-2.4.1_1
 libwireplumber-0.4.so.0 wireplumber-0.4.14_1
 libjodycode.so.2 libjodycode-2.0.1_1
 libgsoapssl++-2.8.124.so gsoap-2.8.124_1
+libjxl.so.0.8 libjxl-0.8.2_1
+libjxl_dec.so.0.8 libjxl-0.8.2_1
+libjxl_threads.so.0.8 libjxl-0.8.2_1
