@@ -1,0 +1,51 @@
+# Template file for 'wayprompt'
+pkgname=wayprompt
+version=0.1.0
+revision=1
+build_style=zig-build
+hostmakedepends="pkg-config"
+makedepends="fcft-devel libxkbcommon-devel pixman-devel wayland-devel wayland-protocols"
+short_desc="Multi-purpose prompt tool for Wayland"
+maintainer="reedts <j.reedts@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://git.sr.ht/~leon_plickat/wayprompt"
+_zig_fcft_gitrev="77225b01b3d8caf3e92f39c251b5886dcfeeb3ce"
+_zig_pixman_gitrev="4a49ba13eb9ebb0c0f991de924328e3d615bf283"
+_zig_spoon_gitrev="a8bc052f45c18216f03e8f2576ca019a9cc2c1ab"
+_zig_wayland_gitrev="71d21959b4671a848f1d198f6bb919f54d541f41"
+_zig_xkbcommon_gitrev="bfd1f97c277c32fddb77dee45979d2f472595d19"
+distfiles="https://git.sr.ht/~leon_plickat/wayprompt/archive/master.tar.gz
+ https://git.sr.ht/~novakane/zig-fcft/archive/${_zig_fcft_gitrev}.tar.gz
+ https://github.com/ifreund/zig-pixman/archive/${_zig_pixman_gitrev}.tar.gz
+ https://git.sr.ht/~leon_plickat/zig-spoon/archive/${_zig_spoon_gitrev}.tar.gz
+ https://github.com/ifreund/zig-wayland/archive/${_zig_wayland_gitrev}.tar.gz
+ https://github.com/ifreund/zig-xkbcommon/archive/${_zig_xkbcommon_gitrev}.tar.gz"
+checksum="62eb455203617dee1aaf5f579489304432c5e6928cdc392541cc3cb27089d6ec
+ f1fad46d5a1003437fcd3c92365ac61dea56b53f9feb72053110756a8bd0b7de
+ bf41e4571918496d9b278cfb950f429ea30f52226ccdaae1f6060c3554298b21
+ 8f67f57d08e1eeddd33fc8696e58b33ff74ed6b57573d426bd08c2eba623aa09
+ cff19352ce75a03676c4bc72faff861bec93a8f4307ef9f46423b2a22233751c
+ 1e3f13155029cc691fa898a24dd34bf31cb402d63888a55d6781bf125347a3b3"
+alternatives="pinentry:pinentry:/usr/bin/pinentry-wayprompt"
+skip_extraction="${_zig_fcft_gitrev}.tar.gz
+ ${_zig_pixman_gitrev}.tar.gz
+ ${_zig_spoon_gitrev}.tar.gz
+ ${_zig_wayland_gitrev}.tar.gz
+ ${_zig_xkbcommon_gitrev}.tar.gz"
+
+post_extract() {
+	bsdtar xzf "$XBPS_SRCDISTDIR/$pkgname-$version/$_zig_fcft_gitrev.tar.gz" \
+		--strip-components=1 -C "$wrksrc/deps/zig-fcft"
+	bsdtar xzf "$XBPS_SRCDISTDIR/$pkgname-$version/$_zig_pixman_gitrev.tar.gz" \
+		--strip-components=1 -C "$wrksrc/deps/zig-pixman"
+	bsdtar xzf "$XBPS_SRCDISTDIR/$pkgname-$version/$_zig_spoon_gitrev.tar.gz" \
+		--strip-components=1 -C "$wrksrc/deps/zig-spoon"
+	bsdtar xzf "$XBPS_SRCDISTDIR/$pkgname-$version/$_zig_wayland_gitrev.tar.gz" \
+		--strip-components=1 -C "$wrksrc/deps/zig-wayland"
+	bsdtar xzf "$XBPS_SRCDISTDIR/$pkgname-$version/$_zig_xkbcommon_gitrev.tar.gz" \
+		--strip-components=1 -C "$wrksrc/deps/zig-xkbcommon"
+}
+
+pre_configure() {
+	vsed -i 's/exe.install();/exe.pie=true;\nexe.install();/' build.zig
+}
