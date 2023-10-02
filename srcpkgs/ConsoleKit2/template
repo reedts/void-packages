@@ -1,6 +1,6 @@
 # Template file for 'ConsoleKit2'
 pkgname=ConsoleKit2
-version=1.2.5
+version=1.2.6
 revision=2
 build_style=configure
 configure_args="--prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-pam-module --with-pam-module-dir=/usr/lib/security --disable-static"
@@ -17,7 +17,7 @@ maintainer="reedts <j.reedts@gmail.com>"
 license="GPL-2.0-only"
 homepage="https://github.com/ConsoleKit2/ConsoleKit2"
 distfiles="https://github.com/ConsoleKit2/ConsoleKit2/archive/refs/tags/${version}.tar.gz"
-checksum=d82eeab0c830acdb720e910b5b7bf59db0d3eb922c4390f15cf19bb035742caa
+checksum=d41224129c5a689469ebd8fe87e34c4a76afdb7b2f6201eb246320262ea5a942
 
 pre_configure() {
 	./autogen.sh
