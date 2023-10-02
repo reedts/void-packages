@@ -1,6 +1,6 @@
 # Template file for 'synapse'
 pkgname=synapse
-version=1.90.0
+version=1.93.0
 revision=1
 build_style=python3-pep517
 build_helper=rust
@@ -24,10 +24,10 @@ license="Apache-2.0"
 homepage="https://github.com/matrix-org/synapse"
 changelog="https://raw.githubusercontent.com/matrix-org/synapse/develop/CHANGES.md"
 distfiles="https://github.com/matrix-org/synapse/archive/v${version}.tar.gz"
-checksum=72057f1299d4749aa4da59a0107ac7e675d6dc42c77f42fb002d2309c455e4d2
+checksum=4bacff7559cd1f36a51743b79fe871eb3b96933aa663aad6f8900a1c6b7f8e21
 
 if [ "$CROSS_BUILD" ]; then
-	makedepends+=" rust-std"
+	makedepends+=" rust-std python3"
 fi
 
 system_accounts="synapse"
