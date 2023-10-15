@@ -469,7 +469,7 @@ libfsimage.so.1.0 xen-libs-4.10.0_1
 libxenstat.so.4.14 xen-libs-4.14.0_1
 libfam.so.0 gamin-0.1.10_1
 libgamin-1.so.0 gamin-0.1.10_1
-libkateprivate.so.23.08.0 libkate-23.08.0_1
+libkateprivate.so.23.08.2 libkate-23.08.2_1
 libKF5SyntaxHighlighting.so.5 syntax-highlighting-5.29.0_1
 libKPim5Libkleo.so.5 libkleo-23.04.0_1
 libKPim5GrantleeTheme.so.5 grantleetheme-23.04.0_1
@@ -2504,7 +2504,7 @@ libfixedfann.so.2 fann-2.2.0_1
 libfann.so.2 fann-2.2.0_1
 libdoublefann.so.2 fann-2.2.0_1
 libxerces-c-3.2.so libxerces-c-3.2.0_1
-libunibreak.so.3 libunibreak-4.0_1
+libunibreak.so.5 libunibreak-5.1_1
 libiperf.so.0 iperf3-3.1.1_1
 libKF5UnitConversion.so.5 kunitconversion-5.26.0_1
 libfdk-aac.so.2 fdk-aac-2.0.0_1
@@ -2569,7 +2569,7 @@ libhwloc.so.15 libhwloc-2.0.4_1
 libnetfilter_cttimeout.so.1 libnetfilter_cttimeout-1.0.0_1
 libnetfilter_cthelper.so.0 libnetfilter_cthelper-1.0.0_1
 libnetfilter_queue.so.1 libnetfilter_queue-1.0.2_1
-libfilezilla.so.40 libfilezilla-0.44.0_1
+libfilezilla.so.41 libfilezilla-0.45.0_1
 libtommath.so.1 libtommath-1.0_1
 libKF5ItemViews.so.5 kitemviews-5.26.0_1
 libunicorn.so.1 unicorn-1.0_1
@@ -3892,7 +3892,7 @@ libJudy.so.1 judy-1.0.5_1
 libsignal-protocol-c.so.2 libsignal-protocol-c-2.3.3_2
 libKSeExprUI.so.4 seexpr-krita-4.0.4.0_1
 libKSeExpr.so.4 seexpr-krita-4.0.4.0_1
-libkritaqmicinterface.so.17 krita-5.0.0_1
+libkritaqmicinterface.so.19 krita-5.2.0_1
 liburing.so.2 liburing-2.0_1
 libbson-1.0.so.0 libbson-1.17.4_2
 libsonic.so.0 libsonic-0.2.0_1
