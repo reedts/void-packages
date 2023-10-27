@@ -1,6 +1,6 @@
 # Template file for 'zotero'
 pkgname=zotero
-version=6.0.16
+version=6.0.26
 revision=1
 arch="x86_64"
 short_desc="A tool to help you collect, organize, cite, and share your research sources."
@@ -9,7 +9,7 @@ license="GPL-3.0-or-later"
 homepage="https://www.zotero.org"
 distfiles="${homepage}/download/client/dl?channel=release&platform=linux-${arch}&version=${version}>Zotero-${version}_linux_${arch}.tar.bz2"
 nopie=yes
-checksum=3ea0bb3eaa514a6fd8b77a4af13bb372b86d7c949e257ead876c5bda7fc1ba5f
+checksum=06daf3bfdb6b5058c2ad0f8e11cecc50eceaef1dd75bb8ed81424c8ad98f2b40
 wrksrc="Zotero_linux-${arch}"
 
 do_install() {
