@@ -1,6 +1,6 @@
 # Template file for 'kio'
 pkgname=kio
-version=5.111.0
+version=5.113.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON
@@ -16,7 +16,7 @@ maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kio"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
-checksum=51bfd270942bcd80d8c3bfb72ee299d4d04a257f496b1843d9335d0db9afd045
+checksum=a8b110ef3cfefd53c0fadc58eca5b573319663f380fedfc35ef8d7dbf8d855ae
 
 do_check() {
 	: # Pain to get working in limited enviroment, excpects e.g. real disks
