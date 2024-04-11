@@ -102,11 +102,11 @@ libglib-2.0.so.0 glib-2.76.0_1
 libgmodule-2.0.so.0 glib-2.76.0_1
 libgio-2.0.so.0 glib-2.76.0_1
 libgobject-2.0.so.0 glib-2.76.0_1
-libwt.so.4.10.0 wt-4.10.0_1
-libwtdbo.so.4.10.0 wt-4.10.0_1
-libwtdbosqlite3.so.4.10.0 wt-4.10.0_1
-libwthttp.so.4.10.0 wt-4.10.0_1
-libwttest.so.4.10.0 wt-4.10.0_1
+libwt.so.4.10.4 wt-4.10.4_1
+libwtdbo.so.4.10.4 wt-4.10.4_1
+libwtdbosqlite3.so.4.10.4 wt-4.10.4_1
+libwthttp.so.4.10.4 wt-4.10.4_1
+libwttest.so.4.10.4 wt-4.10.4_1
 libatk-1.0.so.0 atk-1.26.0_1
 libpangocairo-1.0.so.0 pango-1.24.0_1
 libpangoft2-1.0.so.0 pango-1.24.0_1
@@ -156,7 +156,7 @@ librist.so.4 librist-0.2.7_1
 libdbus-1.so.3 dbus-libs-1.2.10_1
 libdbus-glib-1.so.2 dbus-glib-0.80_1
 libxml2.so.2 libxml2-2.7.0_1
-libxlsxwriter.so.5 libxlsxwriter-1.1.5_1
+libxlsxwriter.so.6 libxlsxwriter-1.1.7_1
 libfuse.so.2 fuse-2.8.1_1
 libfuse3.so.3 fuse3-3.1.0_1
 libXext.so.6 libXext-1.0.5_1
@@ -2191,7 +2191,7 @@ libopenconnect.so.5 openconnect-7.05_1
 libusbredirparser.so.1 usbredir-0.7_1
 libusbredirhost.so.1 usbredir-0.7_1
 libprotobuf-c.so.1 protobuf-c-1.1.0_1
-libutf8proc.so.2 libutf8proc-2.2.0_1
+libutf8proc.so.3 libutf8proc-2.9.0_1
 libnsutils.so.0 libnsutils-0.0.1_1
 libtoxcore.so.2 toxcore-0.2.0_1
 libgom-1.0.so.0 gom-0.3.0_1
@@ -2235,6 +2235,7 @@ libfreshclam.so.2 clamav-0.103.1_2
 libqca-qt5.so.2 qca-qt5-2.1.3_1
 libqca-qt6.so.2 qca-qt6-2.3.8_1
 libqt5keychain.so.1 qtkeychain-qt5-0.7.0_1
+libqt6keychain.so.1 qtkeychain-qt6-0.14.1_1
 libphonon4qt5.so.4 phonon-qt5-4.8.3_1
 libphonon4qt5experimental.so.4 phonon-qt5-4.8.3_1
 libphonon4qt6.so.4 phonon-4.12.0_1
@@ -2720,7 +2721,7 @@ libflimage.so.2 xforms-1.2.4_2
 libutilspp.so.0 curlpp-0.7.3_2
 libcurlpp.so.1 curlpp-0.8.1_1
 libtcd.so.1 libtcd-2.2.7.r2_1
-libaccounts-glib.so.1 libaccounts-glib-1.24_1
+libaccounts-glib.so.0 libaccounts-glib-1.26_1
 libaccounts-qt5.so.1 libaccounts-qt5-1.14_1
 libshotwell-plugin-dev-1.0.so.0 shotwell-0.30.0_1
 libshotwell-plugin-common.so.0 shotwell-0.30.0_1
@@ -3504,7 +3505,7 @@ libmanette-0.2.so.0 libmanette-0.2.1_1
 libfmt.so.9 fmt-9.0.0_1
 libelementary-calendar.so.0 libio.elementary.calendar-4.2.3_1
 libolm.so.3 olm-3.0.0_1
-libtls.so.28 libtls-3.8.2_1
+libtls.so.29 libtls-3.9.1_1
 libxmlb.so.2 libxmlb-0.2.1_1
 libvoikko.so.1 libvoikko-4.2_1
 libfstrcmp.so.0 libfstrcmp-0.7.D001_1
@@ -3533,6 +3534,7 @@ libwoff2common.so.1.0.2 libwoff2common1.0.2-1.0.2_1
 libwoff2enc.so.1.0.2 libwoff2enc1.0.2-1.0.2_1
 libwoff2dec.so.1.0.2 libwoff2dec1.0.2-1.0.2_1
 libcloudproviders.so.0 libcloudproviders-0.2.5_2
+libkdsingleapplication-qt6.so.1.1 KDSingleApplication-1.1.0_1
 libKF5KDEGames.so.7 libkdegames-18.08.3_1
 libKF5KDEGamesPrivate.so.7 libkdegames-21.04.0_1
 libidn2.so.0 libidn2-2.1.1_1
@@ -4303,3 +4305,4 @@ libunicode_loader.so.0.4 libunicode-0.4.0_1
 force-stage.so.0.1 void-force-stage-0.1_1
 libliftoff.so.0 libliftoff-0.4.1_1
 libscfg.so libscfg-0.1.1_1
+libmsgraph-0.so.1 msgraph-0.2.1_1
