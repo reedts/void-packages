@@ -1,6 +1,6 @@
 # Template file for 'ruff'
 pkgname=ruff
-version=0.4.3
+version=0.5.1
 revision=1
 build_style=python3-pep517
 build_helper="rust"
@@ -11,8 +11,8 @@ maintainer="icp <pangolin@vivaldi.net>"
 license="MIT"
 homepage="https://docs.astral.sh/ruff/"
 changelog="https://raw.githubusercontent.com/astral-sh/ruff/main/CHANGELOG.md"
-distfiles="https://github.com/astral-sh/ruff/archive/refs/tags/v${version}.tar.gz"
-checksum=7fdff8b7391c305bad50b7982790638176785337d7369c3c8518fd384643cd5e
+distfiles="https://github.com/astral-sh/ruff/archive/refs/tags/${version}.tar.gz"
+checksum=4e31c38d800601cb13349cb9c6b29cd0a37bb505e467abb4492a1ae255eb5a48
 
 post_install() {
 	vlicense LICENSE
