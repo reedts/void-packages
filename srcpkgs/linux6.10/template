@@ -1,6 +1,6 @@
-# Template file for 'linux6.7'
-pkgname=linux6.7
-version=6.7.12
+# Template file for 'linux6.10'
+pkgname=linux6.10
+version=6.10.0
 revision=1
 short_desc="Linux kernel and modules (${version%.*} series)"
 maintainer="Duncaen <duncaen@voidlinux.org>"
@@ -13,8 +13,7 @@ if [ "${version##*.}" != 0 ]; then
 	skip_extraction="patch-${version}.xz"
 fi
 
-checksum="ef31144a2576d080d8c31698e83ec9f66bf97c677fa2aaf0d5bbb9f3345b1069
- 4c82336516e00775b40dd3d4ca6a77146fb1b797113efefebedb5b0a38e931d5"
+checksum=774698422ee54c5f1e704456f37c65c06b51b4e9a8b0866f34580d86fef8e226
 python_version=3
 
 # XXX Restrict archs until a proper <arch>-dotconfig is available in FILESDIR.
@@ -326,7 +325,7 @@ do_install() {
 	rm -f ${DESTDIR}/lib
 }
 
-linux6.7-headers_package() {
+linux6.10-headers_package() {
 	preserve=yes
 	nostrip=yes
 	noshlibprovides=yes
@@ -337,7 +336,7 @@ linux6.7-headers_package() {
 	}
 }
 
-linux6.7-dbg_package() {
+linux6.10-dbg_package() {
 	preserve=yes
 	nostrip=yes
 	noverifyrdeps=yes
