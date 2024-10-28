@@ -1,6 +1,6 @@
 # Template file for 'uv'
 pkgname=uv
-version=0.4.17
+version=0.4.27
 revision=1
 build_style=python3-pep517
 build_helper="rust qemu"
@@ -11,10 +11,8 @@ maintainer="classabbyamp <void@placeviolette.net>"
 license="Apache-2.0 OR MIT"
 homepage="https://github.com/astral-sh/uv"
 changelog="https://github.com/astral-sh/uv/raw/main/CHANGELOG.md"
-distfiles="https://github.com/astral-sh/uv/releases/download/${version}/source.tar.gz"
-checksum=68ad7bf18029bcc9f0c8556e5fb96814fa30d8f67b3ccbc5db19e38b487c9326
-# many tests require old python versions
-make_check=no
+distfiles="https://github.com/astral-sh/uv/releases/download/${version}/source.tar.gz>uv-${version}.tar.gz"
+checksum=6ebf2732b3c4af6c0d433258cd938c40193602ddccf4996a757e2d5392a6b22b
 
 post_install() {
 	vlicense LICENSE-MIT
