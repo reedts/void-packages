@@ -1,0 +1,17 @@
+diff --git a/themes/src/sass/_variables.scss b/themes/src/sass/_variables.scss
+index 054e8c82..c6bf4b76 100644
+--- a/themes/src/sass/_variables.scss
++++ b/themes/src/sass/_variables.scss
+@@ -13,9 +13,9 @@ $menuitem-size: if($compact == 'false', 28px, 24px);
+ $root-font-size: if($compact == 'false', 14px, 13px);
+ 
+ // Radiuses
+-$window-radius: 12px;
+-$modal-radius: 9px;
+-$corner-radius: 12px;
++$window-radius: 0;
++$modal-radius: 0;
++$corner-radius: 0;
+ $menu-radius: $corner-radius;
+ $menuitem-radius: $menu-radius;
+ $circular-radius: 9999px;

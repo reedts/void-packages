@@ -1,0 +1,38 @@
+# Template file for 'tokyonight-green-gtk-theme'
+pkgname=tokyonight-green-gtk-theme
+version=20241207
+revision=1
+_commit_sha=4dc45d60bf35f50ebd9ee41f16ab63783f80dd64
+hostmakedepends="gnome-shell sassc"
+depends="gnome-themes-extra gtk-engine-murrine"
+short_desc="GTK theme based on the Tokyo Night colour palette"
+maintainer="reedts <j.reedts@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme"
+distfiles="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme/archive/${_commit_sha}.tar.gz"
+checksum=cd43864bfec689c97b08c72ab3f26e61daeb9b67ceb893796187c5abaab5da97
+
+build_options="light"
+desc_option_light="Build light theme"
+
+do_build() {
+	cd themes
+	./build.sh
+}
+
+do_install() {
+	cd themes
+	./install.sh \
+		-t green \
+		-c $(vopt_if light light dark) \
+		-d $DESTDIR/usr/share/themes
+}
+
+tokyonight-green-gtk-theme-icons_package() {
+	short_desc+=" - icons"
+
+	pkg_install() {
+		vmkdir usr/share/icons/
+		vcopy icons/Tokyonight-Dark usr/share/icons
+	}
+}
