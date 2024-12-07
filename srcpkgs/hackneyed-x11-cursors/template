@@ -1,0 +1,19 @@
+# Template file for 'hackneyed-x11-cursors'
+pkgname=hackneyed-x11-cursors
+version=0.9.3
+revision=1
+build_style=gnu-makefile
+make_build_target="DARK_THEME=1 default.24"
+make_install_target="DARK_THEME=1 install.small"
+hostmakedepends="make"
+makedepends="jq xcursorgen ImageMagick inkscape"
+short_desc="Classic, plain white/dark cursors for X11/Wayland compositors"
+maintainer="reedts <j.reedts@gmail.com>"
+license="X11-distribute-modifications-variant"
+homepage="https://gitlab.com/Enthymeme/hackneyed-x11-cursors"
+distfiles="https://gitlab.com/Enthymeme/hackneyed-x11-cursors/-/archive/${version}/${pkgname}-${version}.tar.gz"
+checksum=fe411109969790c60641a9fe22ab413dc623bdfbc3a8907547cb769e3c0aa56d
+
+post_install() {
+	vlicense LICENSE
+}
