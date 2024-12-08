@@ -1,0 +1,15 @@
+# Template file for 'tela-icon-theme'
+pkgname=tela-icon-theme
+version=20240904
+revision=1
+_release=2024-09-04
+short_desc="Flat colorful Design icon theme"
+maintainer="reedts <j.reedts@gmail.com>"
+license="GPL-3.0-or-later"
+homepage="https://github.com/vinceliuice/Tela-icon-theme"
+distfiles="https://github.com/vinceliuice/Tela-icon-theme/archive/refs/tags/${_release}.tar.gz"
+checksum=8d516bd5cf69e1763e87a11a3651ddb73fd7c508adb9d992cdebfab399c78980
+
+do_install() {
+	./install.sh -d "$DESTDIR/usr/share/icons" green
+}
