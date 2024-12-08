@@ -1,7 +1,7 @@
 # Template file for 'tokyonight-green-gtk-theme'
 pkgname=tokyonight-green-gtk-theme
 version=20241207
-revision=1
+revision=2
 _commit_sha=4dc45d60bf35f50ebd9ee41f16ab63783f80dd64
 hostmakedepends="gnome-shell sassc"
 depends="gnome-themes-extra gtk-engine-murrine"
@@ -12,8 +12,10 @@ homepage="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme"
 distfiles="https://github.com/Fausto-Korpsvart/Tokyonight-GTK-Theme/archive/${_commit_sha}.tar.gz"
 checksum=cd43864bfec689c97b08c72ab3f26e61daeb9b67ceb893796187c5abaab5da97
 
-build_options="light"
+build_options="light app_icons"
 desc_option_light="Build light theme"
+desc_option_app_icons="Include app icons"
+desc_options_default="app_icons"
 
 do_build() {
 	cd themes
@@ -33,6 +35,11 @@ tokyonight-green-gtk-theme-icons_package() {
 
 	pkg_install() {
 		vmkdir usr/share/icons/
+		if [[ $(vopt_if app_icons true false) = false ]]; then
+			rm -rf icons/Tokyonight-Dark/apps
+		fi
+
+		vsed -i icons/Tokyonight-Dark/index.theme -e "s/Name=oomox-/Name=/"
 		vcopy icons/Tokyonight-Dark usr/share/icons
 	}
 }
