@@ -1,6 +1,6 @@
 # Template file for 'matterhorn'
 pkgname=matterhorn
-version=90000.0.0
+version=90000.0.1
 revision=1
 archs="x86_64"
 hostmakedepends="cabal-install ghc pkg-config"
@@ -10,7 +10,7 @@ maintainer="Julian Bigge <j.reedts@gmail.com>"
 license="BSD-3-Clause"
 homepage="https://github.com/matterhorn-chat/matterhorn"
 distfiles="https://github.com/matterhorn-chat/matterhorn/archive/${version}.tar.gz"
-checksum=24a0eb9328e9afeea46af389d898d0ba9cc5a06fb5d9e9ee9394c342f1b695db
+checksum=8b4a24835ec55a33d4aed2c5e0331dfd8595f5afbf22e61d4aaba9b7deac6c01
 nopie=yes
 
 post_extract() {
