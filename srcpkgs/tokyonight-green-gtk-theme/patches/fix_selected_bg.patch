@@ -1,0 +1,13 @@
+diff --git a/themes/src/sass/_colors.scss b/themes/src/sass/_colors.scss
+index ace7889c..7b18deb0 100644
+--- a/themes/src/sass/_colors.scss
++++ b/themes/src/sass/_colors.scss
+@@ -117,7 +117,7 @@
+ 
+ @function background($type) {
+ 	@if ($type == 'a') { @return $white; }
+-	@if ($type == 'b') { @return $grey-100; }
++	@if ($type == 'b') { @return $grey-650; }
+ 	@if ($type == 'c') { @return $grey-150; }
+ 	@if ($type == 'd') { @return $grey-200; }
+ 
