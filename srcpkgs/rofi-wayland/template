@@ -1,0 +1,33 @@
+# Template file for 'rofi-wayland'
+pkgname=rofi-wayland
+_pkgname=rofi
+version=1.7.5
+revision=1
+build_style=meson
+hostmakedepends="flex pkg-config"
+makedepends="glib-devel libXinerama-devel librsvg-devel
+ libxkbcommon-devel pango-devel startup-notification-devel
+ wayland-protocols wayland-devel
+ xcb-util-wm-devel xcb-util-xrm-devel xcb-util-cursor-devel"
+short_desc="Window switcher, run dialog and dmenu replacement"
+maintainer="reedts <j.reedts@gmail.com>"
+license="MIT"
+homepage="https://github.com/lbonn/rofi"
+distfiles="https://github.com/lbonn/rofi/releases/download/${version}+wayland3/${_pkgname}-${version}+wayland3.tar.gz"
+checksum=ddd66ce401bc30da8e502499bafb9ab2dbf1f8d62aeb9d41f32213394246ea59
+
+provides="rofi-${version}_${revision}"
+conflicts="rofi"
+
+post_install() {
+	vlicense COPYING
+}
+
+rofi-wayland-devel_package() {
+	short_desc+=" - development files"
+	depends="libglib-devel cairo-devel"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/pkgconfig
+	}
+}
