@@ -1,6 +1,6 @@
 # Template file for 'inlyne'
 pkgname=inlyne
-version=0.4.1
+version=0.4.3
 revision=1
 build_style=cargo
 hostmakedepends="pkg-config"
@@ -10,7 +10,7 @@ maintainer="Julian Bigge <j.reedts@gmail.com>"
 license="MIT"
 homepage="https://github.com/Inlyne-Project/inlyne"
 distfiles="${homepage}/archive/v${version}.tar.gz"
-checksum=62e089627812690b182520138708151f47391c5ba518f0b80649942dedd1be87
+checksum=60f111e67d8e0b2bbb014900d4bc84ce6d2823c8daaba2d7eda0d403b01d7d1b
 
 post_install() {
 	vlicense LICENSE
