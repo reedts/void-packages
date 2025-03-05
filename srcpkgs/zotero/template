@@ -1,6 +1,6 @@
 # Template file for 'zotero'
 pkgname=zotero
-version=6.0.26
+version=7.0.13
 revision=1
 arch="x86_64"
 short_desc="A tool to help you collect, organize, cite, and share your research sources."
@@ -9,21 +9,24 @@ license="GPL-3.0-or-later"
 homepage="https://www.zotero.org"
 distfiles="${homepage}/download/client/dl?channel=release&platform=linux-${arch}&version=${version}>Zotero-${version}_linux_${arch}.tar.bz2"
 nopie=yes
-checksum=06daf3bfdb6b5058c2ad0f8e11cecc50eceaef1dd75bb8ed81424c8ad98f2b40
+checksum=fd58a0e299555effa99f75f0e9fd32d163e3590d2c488fbd6ff6132d76d38bf2
 wrksrc="Zotero_linux-${arch}"
 
 do_install() {
 	vmkdir opt/zotero
 	vmkdir usr/bin
 	vcopy ${wrksrc}/* opt/zotero
-	ln -s "${DESTDIR}/opt/zotero/zotero" "${DESTDIR}/usr/bin/zotero"
-	vinstall "${wrksrc}/zotero.desktop" 755 "/usr/share/applications/zotero.desktop"
+	ln -sf "/opt/zotero/zotero" "${DESTDIR}/usr/bin/zotero"
+	vinstall "${wrksrc}/zotero.desktop" 755 "/usr/share/applications/"
+	# Execute zotero from PATH
+	vsed -i "${DESTDIR}/usr/share/applications/zotero.desktop" -e 's/^Exec=.*/Exec=zotero -url %U/'
+	# Remove icon suffix
+	vsed -i "${DESTDIR}/usr/share/applications/zotero.desktop" -e '/Icon/s/\.ico//'
 
-	for size in 16 32 48 256; do
-		vmkdir usr/share/icons/hicolor/${size}x${size}/apps
-		mv "${DESTDIR}/opt/zotero/chrome/icons/default/default${size}.png" "${DESTDIR}/usr/share/icons/hicolor/${size}x${size}/apps/zotero.png"
+	for size in 32 64 128; do
+		install -Dm644 "${DESTDIR}/opt/zotero/icons/icon${size}.png" "${DESTDIR}/usr/share/icons/hicolor/${size}x${size}/apps/zotero.png"
 	done
 
-	# Disable APP update
-	vsed -i ${DESTDIR}/opt/zotero/defaults/preferences/prefs.js -e '/pref("app.update.enabled", true);/c\pref("app.update.enabled", false);'
+	install -Dm644 "${DESTDIR}/opt/zotero/icons/symbolic.svg" "${DESTDIR}/usr/share/icons/hicolor/symbolic/apps/zotero-symbolic.svg"
+
 }
