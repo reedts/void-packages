@@ -61,6 +61,6 @@ polkit-devel_package() {
 
 polkit-elogind_package() {
 	depends="polkit>=${version}_${revision}"
-	build_style=meta
+	metapackage=yes
 	short_desc+=" (transitional dummy package)"
 }
