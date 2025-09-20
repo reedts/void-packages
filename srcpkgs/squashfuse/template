@@ -1,28 +1,30 @@
 # Template file for 'squashfuse'
 pkgname=squashfuse
-version=0.5.2
+version=0.6.1
 revision=1
 build_style=gnu-configure
-#configure_args=""
-#make_build_args=""
-#make_install_args=""
-#conf_files=""
-hostmakedepends="autoconf automake libtool pkg-config"
-makedepends="fuse-devel zlib-devel"
+hostmakedepends="pkg-config"
+makedepends="fuse3-devel liblz4-devel liblzma-devel libzstd-devel lzo-devel
+ zlib-devel"
 short_desc="FUSE filesystem to mount squashfs archives"
-maintainer="reedts <j.reedts@gmail.com>"
-license="custom:"
+maintainer="Leah Neukirchen <leah@vuxu.org>"
+license="BSD-2-Clause"
 homepage="https://github.com/vasi/squashfuse"
-#changelog=""
-distfiles="https://github.com/vasi/squashfuse/archive/refs/tags/${version}.tar.gz"
-checksum=db0238c5981dabbd80ee09ae15387f390091668ca060a7bc38047912491443d3
-
-pre_configure() {
-	# fix wrong version string
-	# vsed -i ./configure.ac -e 's/0.1.104/0.1.105/'
-	./autogen.sh
-}
+changelog="https://github.com/vasi/squashfuse/blob/master/NEWS"
+distfiles="https://github.com/vasi/squashfuse/releases/download/${version}/squashfuse-${version}.tar.gz"
+checksum=7b18a58c40a3161b5c329ae925b72336b5316941f906b446b8ed6c5a90989f8c
 
 post_install() {
 	vlicense LICENSE
+}
+
+squashfuse-devel_package() {
+	short_desc+=" - development files"
+	depends="${sourcepkg}>=${version}_${revision} fuse3-devel"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/*.a
+		vmove usr/lib/*.so
+		vmove usr/lib/pkgconfig
+	}
 }
