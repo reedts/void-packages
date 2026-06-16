@@ -1,6 +1,6 @@
 # Template file for 'rclone'
 pkgname=rclone
-version=1.73.5
+version=1.74.3
 revision=1
 build_style=go
 build_helper="qemu"
@@ -15,7 +15,7 @@ license="MIT"
 homepage="https://rclone.org/"
 changelog="https://raw.githubusercontent.com/rclone/rclone/master/docs/content/changelog.md"
 distfiles="https://downloads.rclone.org/v${version}/rclone-v${version}.tar.gz"
-checksum=19c929ce2f54bd22af2db4dd9d2a289499b02274f9f7d3c6639090761adfab1f
+checksum=c51062f24bb8e6d05c252c9c9fb527adc831715e0dd936ca0c9fb8d07e49d66a
 make_check_pre="env RCLONE_CONFIG=/notfound CI=1"
 
 pre_build() {
