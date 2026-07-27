@@ -1,10 +1,10 @@
 # Template file for 'netpbm'
 pkgname=netpbm
 # from http://svn.code.sf.net/p/netpbm/code/advanced/doc/HISTORY
-version=11.14.01
+version=11.15.03
 revision=1
-_githash=de758eba36d7040c0541a55289b5675db60fc7a5
-_githash_guide=551ccafdcb0b30d6950afc2681c1adba70e50896
+_githash=6f0fcc5545992a56018a4b54006a05392ca5679c
+_githash_guide=9054cd886605b5980ad3202e05b08ba37912a8a2
 create_wrksrc=yes
 build_wrksrc="netpbm-mirror-${_githash}"
 hostmakedepends="flex perl pkg-config python3"
@@ -16,8 +16,8 @@ license="BSD-3-Clause,GPL-2.0-only,custom:netpbm"
 homepage="http://netpbm.sourceforge.net/"
 distfiles="https://github.com/leahneukirchen/netpbm-mirror/archive/${_githash}.tar.gz
  https://github.com/leahneukirchen/netpbm-mirror/archive/${_githash_guide}.tar.gz"
-checksum="d2b3168a301aa09a6797dd107f43c65acee5f1a6a8343aec683c5d47273936c7
- 81606e1a84bc043d46b12216c09998a120a0163fb23e87742af8dd44160b1897"
+checksum="dd45aead4e4440f4da0b7e5bd9c13ceb85225b350502eaec47316786116831e2
+ 1ec2f4b2e12843729a47b28f57e8e476ed490bc28820b0dc3a4ae94e1ffd863f"
 
 post_extract() {
 	cd $build_wrksrc
